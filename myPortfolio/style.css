@@ -42,7 +42,7 @@ body {
   
   .has-border {
     border-radius: 25px;
-    border: 2px solid #0795C3;
+    border: 2px solid rgb(25, 194, 157);
     background: none;
     padding: 20px; 
   }
@@ -65,7 +65,7 @@ body {
     color:rgb(230, 152, 121);
     grid-column: 2/3;
     margin: 3% auto;
-    border-bottom: 2px solid rgb(6, 151, 156);
+    border-bottom: 2px solid rgb(25, 194, 157);
     font-family: 'Satisfy', cursive;
   }
   
