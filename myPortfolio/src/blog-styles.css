@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    background: linear-gradient(45deg, rgb(85, 194, 170), rgb(230, 152, 121));
+    color: #dad8d1;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+}
+
+nav {
+    padding: 20px;
+}
+
+ div {
+    border: 3px solid #373d44;
+    border-radius: 5px;
+    margin: 3px 15%;
+    padding: 20px;
+    color: #373d44;
+    background-color: #9b9999;
+    text-align: center;
+}
+
+div:hover {
+    background: linear-gradient(45deg, rgb(230, 152, 121), rgb(85, 194, 170));
+    color: #ccddf3; 
+}
+
+div:hover p:first-letter {
+    font-size: 24px;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+}
+
+h3 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 12px;
+}
+
+footer {
+    background: linear-gradient(45deg, rgb(85, 194, 170), rgb(230, 152, 121));
+    color: #dad8d1;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer a {
+    padding: 15px;
+}
+
