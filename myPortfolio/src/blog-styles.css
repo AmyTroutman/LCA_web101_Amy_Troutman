@@ -1,5 +1,5 @@
 body {
-    background-color: linear-gradient(45deg, rgb(85, 194, 170), rgb(230, 152, 121));
+    background-color: #373d44;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -7,12 +7,13 @@ header {
     background: linear-gradient(45deg, rgb(85, 194, 170), rgb(230, 152, 121));
     color: #dad8d1;
     padding: 4px;
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
 }
 
-nav {
+nav a {
     padding: 20px;
 }
 
@@ -22,13 +23,13 @@ nav {
     margin: 3px 15%;
     padding: 20px;
     color: #373d44;
-    background-color: #9b9999;
+    background-color: #ffffff;
     text-align: center;
 }
 
 div:hover {
     background: linear-gradient(45deg, rgb(230, 152, 121), rgb(85, 194, 170));
-    color: #ccddf3; 
+    color: #ffffff; 
 }
 
 div:hover p:first-letter {
