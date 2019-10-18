@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: linear-gradient(45deg, rgb(85, 194, 170), rgb(230, 152, 121));
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -33,6 +33,10 @@ div:hover {
 
 div:hover p:first-letter {
     font-size: 24px;
+}
+
+div p span {
+    color: purple !important;
 }
 
 h1 {
