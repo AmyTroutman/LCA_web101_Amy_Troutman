@@ -1,0 +1,72 @@
+body {
+    background-color: #dad8d1;
+}
+
+header {
+    background-color: #373d44;
+    display: grid;
+    grid-template-columns: 33% 66%;
+    padding: 7% 17%;
+    margin: 45px;
+    margin-bottom: 0%;
+}
+
+#myFace {
+    width: 260px;
+    height: 200px;
+    border: rgb(230, 152, 121) solid 2px;
+    border-radius: 5%;
+  }
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    color: rgb(25, 194, 157);
+    text-align: center;
+    background-color: #dad8d1;
+    border: rgb(230, 152, 121) solid 2px;
+    padding-top: 35px;
+}
+
+h2 {
+    font-family: 'Homemade Apple', cursive;
+    color: rgb(25, 194, 157);
+    
+    text-decoration: underline;
+}
+
+section {
+    font-family: 'Special Elite', cursive;
+    
+}
+
+.date {
+    font-family: 'Bad Script', cursive;
+    font-size: 18px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+}
+
+.left {
+    background-color: #373d44;
+    padding: 0px 20px 0px 40px;
+    margin: 0px 25px;
+    color: #dad8d1;
+}
+
+.left h2 {
+    border-bottom: #dad8d1 solid 3px;
+    text-align: center;
+}
+
+.right {
+    color: #373d44;
+}
+
+.right h2, p {
+    padding-left: 20px;
+}
+
