@@ -6,8 +6,8 @@ header {
     background-color: #373d44;
     display: grid;
     grid-template-columns: 33% 66%;
-    padding: 7% 17%;
-    margin: 45px;
+    padding: 7%;
+    margin: 10px 45px;
     margin-bottom: 0%;
 }
 
@@ -24,8 +24,19 @@ h1 {
     text-align: center;
     background-color: #dad8d1;
     border: rgb(230, 152, 121) solid 2px;
+    width: 700px;
     padding-top: 35px;
-}
+    box-shadow: 0 1px 1px rgba(235, 176, 176, 0.12), 
+              0 2px 2px rgba(180, 178, 178, 0.12), 
+              0 4px 4px rgba(223, 192, 192, 0.12), 
+              0 8px 8px rgba(167, 164, 164, 0.12),
+              0 16px 16px rgba(212, 202, 202, 0.12),
+              0 -1px 1px rgba(235, 176, 176, 0.12), 
+              0 -2px 2px rgba(180, 178, 178, 0.12), 
+              0 -4px 4px rgba(223, 192, 192, 0.12), 
+              0 -8px 8px rgba(167, 164, 164, 0.12),
+              0 -16px 16px rgba(212, 202, 202, 0.12);
+              /*Credit to Tobias Ahlin for deeper shadow! www.tobiasahlin.com*/}
 
 h2 {
     font-family: 'Homemade Apple', cursive;
@@ -47,7 +58,8 @@ section {
 main {
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
 }
 
 .left {
@@ -70,3 +82,16 @@ main {
     padding-left: 20px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+a {
+    color: #dad8d1;
+}
+
+a:visited {
+    color: rgb(230, 152, 121) ;
+}
