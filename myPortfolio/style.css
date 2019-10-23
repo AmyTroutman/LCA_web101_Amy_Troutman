@@ -8,14 +8,15 @@ body {
   }
   
   .logo {
-    width: 30%;
+    width: auto;
     height: 80%;
-    margin: 3% 10%;
+    margin: 3% auto;
+    grid-row: 2;
   }
   
   header {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
   }
   
@@ -23,18 +24,18 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
   nav > a {
     margin: 2% 2% 3%;
     height: 10%;
     width: 15%;
-    color: rgb(248, 252, 251);
+    color: rgb(25, 194, 157);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 25px;
-    background: transparent;
+    background: rgb(1,1,1,0.4);
     padding: 15px; 
     text-align: center;
     border: 2px solid rgb(242, 247, 221);
@@ -44,13 +45,13 @@ body {
     border-radius: 25px;
     border: 2px solid rgb(25, 194, 157);
     background: none;
-    padding: 20px; 
+    padding: 15px; 
   }
   
   nav {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    justify-content: center;
+    width: auto;
   }
   
   #profile-pic {
@@ -67,6 +68,7 @@ body {
     margin: 3% auto;
     border-bottom: 2px solid rgb(25, 194, 157);
     font-family: 'Satisfy', cursive;
+    font-size: 72px;
   }
   
   h2 {
@@ -80,17 +82,50 @@ body {
   button {
     grid-column: 2/3;
     margin: 3% auto;
-    width: 70%;
+    width: auto;
     height: 50%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    border: 2px solid rgb(242, 247, 221);
+    border: 2px solid rgb(25, 194, 157);
     border-radius: 25px;
     background: transparent;
     padding: 20px; 
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     text-align: match-parent;
     color: whitesmoke;
     letter-spacing: 16px;
     font-family: 'Special Elite', cursive;
   }
+
+  /* Medium and up (Tablets) */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 36px;
+    }
+
+    nav > a {
+      font-size: 14px;
+    }
+
+    button {
+      padding-bottom: 10%;
+    }
+    
+}
+  /* Small and up (Landscape Phones) */
+  @media (max-width: 576px) {
+   
+    h1 {
+      font-size: 24px;
+    }
+
+    nav > a {
+      font-size: 14px;
+    }
+
+    button {
+      padding-bottom: 10%;
+    }
+
+}
+
