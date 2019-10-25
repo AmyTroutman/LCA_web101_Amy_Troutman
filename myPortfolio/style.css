@@ -13,7 +13,8 @@ body {
     margin: 3% auto;
     grid-row: 2;
   }
-  
+
+  /*I learned more about grid, and switched to fr for units. Made it easier to get things to align and then realign as screen size changed.*/
   header {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -97,6 +98,17 @@ body {
     font-family: 'Special Elite', cursive;
   }
 
+  /* Large and up (Desktops) */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  button {
+    padding-bottom: 10%;
+  }
+}
+
   /* Medium and up (Tablets) */
 @media (max-width: 768px) {
   h1 {
@@ -109,6 +121,11 @@ body {
 
     button {
       padding-bottom: 10%;
+    }
+
+    #profile-pic {
+      width: 200px;
+      height: 200px;
     }
     
 }
