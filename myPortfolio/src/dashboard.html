@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./dashboard-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Homemade+Apple|Special+Elite&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="clock">
+        <section class="jsDigitalClock">
+            <div class="container">
+                <div class="row rowHead">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+                <div class="row rowBody">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div id="dClock">
+                            <div id="dClockInner">
+                                <div id="dClockTime">
+                                    <div class="digitHour">
+                                        <span class="dText">Hour</span>
+                                        <span id="dHour" class="dTime"></span>
+                                    </div>
+                                    <span class="colon">:</span>
+                                    <div class="digitMinute">
+                                        <span class="dText">Minute</span>
+                                        <span id="dMinute" class="dTime"></span>
+                                    </div>
+                                    <span class="colon">:</span>
+                                    <div class="digitSecond">
+                                        <span class="dText">Second</span>
+                                        <span id="dSecond" class="dTime"></span>
+                                    </div>
+                                    <span class="colon"></span>
+                                    <div class="meridiem">
+                                        <span class="dText">Meridiem</span>
+                                        <span id="ampm" class="dTime"></span>
+                                    </div>
+                                </div>
+                                <div id="dClockDate">
+                                    <span id="dMonth"></span>
+                                    <span id="dDate"></span>
+                                    <span id="dYear"></span>
+                                    <span id="dDay"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="hello">
+        <h2><a href="">Click for a Motivational Speech!</a></h2>
+    </div>
+    <div class="todo">
+        <section>
+            <h2>Accomplishments!</h2>
+            <ol>
+                <li>
+                    <label>
+                        <input type="checkbox" checked>
+                        <span>make checkbox!</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" checked>
+                        <span>make to do list head</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span>MOBILE FIRST!</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span>calculator</span>
+                    </label>
+                </li>
+            </ol>
+            <p>Accomplish even more?</p>
+            <input type="text"></input type>
+            <button class="doIt">Do It!</button>
+        </section>
+    </div>
+    <!--I built this all by myself!!-->
+    <div class="calc">
+        <div class="screen">
+            <input type="text">
+        </div>
+        <div class="row">
+            <button class="ac">AC</button>
+            <button class="ec">CE</button>
+            <button class="per">%</button>
+            <button class="div">/</button>
+        </div>
+        <div class="row">
+            <button class="sev">7</button>
+            <button class="eig">8</button>
+            <button class="nin">9</button>
+            <button class="mul">x</button>
+        </div>
+        <div class="row">
+            <button class="fou">4</button>
+            <button class="fiv">5</button>
+            <button class="six">6</button>
+            <button class="min">-</button>
+        </div>
+        <div class="row">
+            <button class="one">1</button>
+            <button class="two">2</button>
+            <button class="thr">3</button>
+            <button class="plu">+</button>
+        </div>
+        <div class="row">
+            <button class="zer">0</button>
+            <button class="dec">.</button>
+            <button class="equ">=</button>
+            <button class="smi">:)</button>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    /*JavaScript Digital Clock*/
+    function digitalClock() {
+        let currDateTime = new Date();
+
+        let hour = currDateTime.getHours() % 12;
+        hour = hour ? hour : 12;
+        let hourString = ('0' + hour).slice(-2);
+
+        let meridiem = (currDateTime.getHours()) >= 12 ? 'PM' : 'AM';
+
+        let minute = currDateTime.getMinutes();
+        let minuteString = ('0' + minute).slice(-2);
+
+        let second = currDateTime.getSeconds();
+        let secondString = ('0' + second).slice(-2);
+
+        let month = currDateTime.getMonth();
+        switch (month) {
+            case 0:
+                month = 'January';
+                break;
+            case 1:
+                month = 'February';
+                break;
+            case 2:
+                month = 'March';
+                break;
+            case 3:
+                month = 'April';
+                break;
+            case 4:
+                month = "May";
+                break;
+            case 5:
+                month = "June";
+                break;
+            case 6:
+                month = "July";
+                break;
+            case 7:
+                month = "August";
+                break;
+            case 8:
+                month = "September";
+                break;
+            case 9:
+                month = "October";
+                break;
+            case 10:
+                month = "November";
+                break;
+            case 11:
+                month = "December";
+                break;
+            default:
+                break;
+        }
+        let monthString = month + ', ';
+
+        let date = currDateTime.getDate();
+        let dateString = ('0' + date).slice(-2);
+
+        let year = currDateTime.getFullYear();
+        let yearString = year + ', ';
+
+        let day = currDateTime.getDay();
+        switch (day) {
+            case 0:
+                day = 'Sunday';
+                break;
+            case 1:
+                day = 'Monday';
+                break;
+            case 2:
+                day = 'Tuesday';
+                break;
+            case 3:
+                day = 'Wednesday';
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+            default:
+                break;
+        }
+        let dayString = day;
+
+        document.getElementById('dHour').innerText = hourString;
+        document.getElementById('dMinute').innerText = minuteString;
+        document.getElementById('dSecond').innerText = secondString;
+        document.getElementById('ampm').innerText = meridiem;
+
+        document.getElementById('dMonth').innerText = monthString;
+        document.getElementById('dDate').innerText = dateString;
+        document.getElementById('dYear').innerText = yearString;
+        document.getElementById('dDay').innerText = dayString;
+
+    }
+    setInterval(digitalClock, 1000);
+</script>
+
+</html>
