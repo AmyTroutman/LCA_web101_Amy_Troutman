@@ -1,42 +1,3 @@
-/*frigging grid stuff*/
-.hello {
-  grid-area: hello;
-}
-.clock {
-  grid-area: clock;
-}
-.todo {
-  grid-area: todo;
-  background-color: rgb(1,1,1,0.7);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 50%;
-  justify-self: center;
-  padding: 10px;
-  margin: 10px;
-  }
-.calc {
-  grid-area: calc;
-  background-color: rgb(1,1,1,0.7);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 20%;
-  justify-self: center;
-  padding: 10px; 
-   
-  }
-.cal {
-  grid-area: cal;
-  width: 60%;
-  justify-self: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: rgb(1,1,1,0.7);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  font-family: 'Rock Salt', cursive;
-  }
-
 
 body {
   display: grid;
@@ -46,20 +7,37 @@ body {
       "hello hello hello" 
       "... clock ..."
       "... todo ..."
-      "... calc ..."
       "... cal ..."
-      "... foot ...";
+      "... calc ...";
   grid-row-gap: 10px;
   background-image: url(./BlancoRiverSunset.jpg);
   height: auto;
   width: auto;
+  padding: 10px;
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;/*try contain once you get grid sorted*/
+  background-size: cover;
   position: relative;
   }
 
+/*Motivational Speech!*/
+.hello {
+  grid-area: hello;
+}
+.hello a {
+  text-decoration: none;
+}
+
 /*To Do*/
+.todo {
+  grid-area: todo;
+  background-color: rgb(1,1,1,0.7);
+  border-radius: 10px;
+  width: 50%;
+  justify-self: center;
+  padding: 10px;
+  margin: 10px;
+  }
 h2 {
   text-align: center;
   font-family: 'Rock Salt', cursive;
@@ -78,7 +56,7 @@ input[type=text] {
   width: 100%;
   margin: 4px 2px;
 }
-p {
+.todo p {
   font-family: 'Rock Salt', cursive;
   font-size: 12px;
   text-align: center;
@@ -99,34 +77,72 @@ p {
 }
 
 /*Calculator*/
+.calc {
+  grid-area: calc;
+  background-color: rgb(1,1,1,0.7);
+  border-radius: 10px;
+  min-width: 20%;
+  justify-self: center;
+  padding: 10px;  
+  }
 .row {
   display: flex;
   justify-content: center;
   align-items: stretch; 
- 
+}
+.row button {
+  border: 0;
+  width: 5ch;
+  height: 5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: rgb(25, 194, 157);
+  font-family: 'Special Elite', cursive;
+}
+.row button:hover,
+.row button:focus {
+  outline: none;
+  background-color: rgb(230, 152, 121);
+  color: #373d44;
 }
 .screen {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
+  display: flex;
+  flex-direction: column;
+}
+.screen p {
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 12px;
+  background-color: rgb(230, 152, 121);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
 }
 .screen input[type=text] {
-  background-color:rgb(230, 152, 121);
-  width: 100%;
-  align-self: center;
+  background-color:rgb(242, 247, 221, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin-bottom: 5%
 }
 
-/*Motivational Speech!*/
-.hello a {
-
-}  
-
 /*Calendar*/
+.cal {
+  grid-area: cal;
+  min-width: 50%;
+  justify-self: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(1,1,1,0.7);
+  border-radius: 10px;
+  font-family: 'Rock Salt', cursive;
+  }
 .month-indicator {
-  color: rgb(230, 152, 121);
+  background-color: rgb(230, 152, 121);
   text-align: center;
   font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .day-of-week,
 .date-grid {
@@ -166,6 +182,7 @@ p {
   border-radius: 50%;
   background-color: transparent;
   color: rgb(25, 194, 157);
+  font-family: 'Special Elite', cursive;
 }
 
 .date-grid button:hover,
@@ -183,6 +200,9 @@ p {
 
 /*Clock code from https://codepen.io/Trikaal/pen/eYOegxm. Is this ok to do, use something from codepen? 
 I changed the fonts, colors, backgrounds, and some of the layout to make it work with my grid.*/
+.clock {
+  grid-area: clock;
+}
 section.jsDigitalClock{
     padding: 10px 0;
     width: 75vw;
