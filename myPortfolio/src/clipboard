@@ -1,0 +1,354 @@
+  /*To do list stuff*/
+  .todoInner {
+      
+  }
+  ol {
+      list-style: none;
+  }
+
+  h2 {
+      text-align: center;
+      font-family: 'Rock Salt', cursive;
+  }
+
+  /*Calculator >:( */
+  .screen {
+      background-color: lightslategray;
+      width: 320px;
+      height: 30px;
+  }
+  .ac  {
+    grid-area: ac;
+  }
+  .ce {
+    grid-area: ce;
+  }
+  .per {
+    grid-area: per;
+  }
+  .div{
+    grid-area: div;
+  }
+  .sev {
+    grid-area: sev;
+  }
+  .eig {
+    grid-area: eig;
+  }
+  .nin {
+    grid-area: nin;
+  }
+  .mul {
+    grid-area: mul;
+  }
+  .six {
+    grid-area: six;
+  }
+  .fiv {
+    grid-area: fiv;
+  }
+  .fou {
+    grid-area: fou;
+  }
+  .min {
+    grid-area: min;
+  }
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .thr {
+    grid-area: thr;
+  }
+  .plu{
+    grid-area: plu;
+  }
+  .zer {
+    grid-area: zer;
+  }
+  .equ {
+    grid-area: equ;
+  }
+  .dec {
+    grid-area: dec;
+  }
+  .smi {
+      grid-area: smi;
+  }
+  .row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "ac ce per div"
+      "sev eig nin mul"
+      "fou fiv six min"
+      "one two thr plu"
+      "zer dec equ smi";
+
+  }
+  
+  
+    /*html clock code*/
+    <section class="jsDigitalClock">
+        <div class="container">
+            <div class="row rowHead">
+                <div class="col-md-12">
+                    <h2>Let's Do This, Guys!</h2>
+                    <p>anything here??</p>
+                </div>
+            </div>
+            <div class="row rowBody">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div id="dClock">
+                        <div id="dClockInner">
+                            <div id="dClockTime">
+                                <div class="digitHour">
+                                    <span class="dText">Hour</span>
+                                    <span id="dHour" class="dTime"></span>
+                                </div>
+                                <span class="colon">:</span>
+                                <div class="digitMinute">
+                                    <span class="dText">Minute</span>
+                                    <span id="dMinute" class="dTime"></span>
+                                </div>
+                                <span class="colon">:</span>
+                                <div class="digitSecond">
+                                    <span class="dText">Second</span>
+                                    <span id="dSecond" class="dTime"></span>
+                                </div>
+                                <span class="colon"></span>
+                                <div class="meridiem">
+                                    <span class="dText">Meridiem</span>
+                                    <span id="ampm" class="dTime"></span>
+                                </div>
+                            </div>
+                            <div id="dClockDate">
+                                <span id="dMonth"></span>
+                                <span id="dDate"></span>
+                                <span id="dYear"></span>
+                                <span id="dDay"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+/*JS clock code*/
+    <script>
+        /*JavaScript Digital Clock*/
+        function digitalClock() {
+            let currDateTime = new Date();
+
+            let hour = currDateTime.getHours() % 12;
+            hour = hour ? hour : 12;
+            let hourString = ('0' + hour).slice(-2);
+
+            let meridiem = (currDateTime.getHours()) >= 12 ? 'PM' : 'AM';
+
+            let minute = currDateTime.getMinutes();
+            let minuteString = ('0' + minute).slice(-2);
+
+            let second = currDateTime.getSeconds();
+            let secondString = ('0' + second).slice(-2);
+
+            let month = currDateTime.getMonth();
+            switch (month) {
+                case 0:
+                    month = 'January';
+                    break;
+                case 1:
+                    month = 'February';
+                    break;
+                case 2:
+                    month = 'March';
+                    break;
+                case 3:
+                    month = 'April';
+                    break;
+                case 4:
+                    month = "May";
+                    break;
+                case 5:
+                    month = "June";
+                    break;
+                case 6:
+                    month = "July";
+                    break;
+                case 7:
+                    month = "August";
+                    break;
+                case 8:
+                    month = "September";
+                    break;
+                case 9:
+                    month = "October";
+                    break;
+                case 10:
+                    month = "November";
+                    break;
+                case 11:
+                    month = "December";
+                    break;
+                default:
+                    break;
+            }
+            let monthString = month + ', ';
+
+            let date = currDateTime.getDate();
+            let dateString = ('0' + date).slice(-2);
+
+            let year = currDateTime.getFullYear();
+            let yearString = year + ', ';
+
+            let day = currDateTime.getDay();
+            switch (day) {
+                case 0:
+                    day = 'Sunday';
+                    break;
+                case 1:
+                    day = 'Monday';
+                    break;
+                case 2:
+                    day = 'Tuesday';
+                    break;
+                case 3:
+                    day = 'Wednesday';
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+                    break;
+                default:
+                    break;
+            }
+            let dayString = day;
+
+            document.getElementById('dHour').innerText = hourString;
+            document.getElementById('dMinute').innerText = minuteString;
+            document.getElementById('dSecond').innerText = secondString;
+            document.getElementById('ampm').innerText = meridiem;
+
+            document.getElementById('dMonth').innerText = monthString;
+            document.getElementById('dDate').innerText = dateString;
+            document.getElementById('dYear').innerText = yearString;
+            document.getElementById('dDay').innerText = dayString;
+
+        }
+        setInterval(digitalClock, 1000);
+    </script>
+
+/*CSS clock code*/
+/*Clock code from https://codepen.io/Trikaal/pen/eYOegxm*/
+  section.jsDigitalClock{
+    padding: 40px 0;
+  }
+  section.jsDigitalClock h2{
+    font-family: 'Satisfy', cursive;
+    font-weight: 700;
+  }
+  section.jsDigitalClock p{
+    font-family: 'Bad Script', cursive;
+    font-weight: 400;
+  }
+  section.jsDigitalClock .rowHead .col-md-12{
+    text-align: center;  
+  }
+  section.jsDigitalClock #dClock {
+    width: 50%;
+    border: 4px solid #4E555C;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  section.jsDigitalClock #dClockTime {
+   
+    background-color: #4E555C;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  
+  section.jsDigitalClock #dClockTime span.dText {
+    color: #DEE2E6;
+    text-transform: uppercase;
+    font-family: 'Special Elite', cursive;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  section.jsDigitalClock #dClockTime .meridiem {
+      text-transform: lowercase;
+  }
+  
+  section.jsDigitalClock #dClockTime span.dTime {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 700;
+    font-size: 36px;
+    display: block;
+    color: #DEE2E6;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 65px;
+    line-height: 1;
+  }
+  
+  section.jsDigitalClock #dClockTime span.colon {
+    margin: 15px 5px 0;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1;
+    color: #DEE2E6;
+  }
+  
+  section.jsDigitalClock #dClockTime:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+  
+  section.jsDigitalClock #dClockDate {
+    
+    padding: 15px 10px;
+    border: 1px solid #4E555C;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+  }
+  
+  section.jsDigitalClock #dClockDate span {
+    font-family: 'Special Elite', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #4E555C;
+  }
+
