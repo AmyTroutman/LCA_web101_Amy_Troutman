@@ -1,4 +1,7 @@
 /*frigging grid stuff*/
+.hello {
+  grid-area: hello;
+}
 .clock {
   grid-area: clock;
 }
@@ -14,16 +17,25 @@
   }
 .calc {
   grid-area: calc;
-  background-color: rgb(1,1,1,0.5);
+  background-color: rgb(1,1,1,0.7);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 25%;
   justify-self: center;
   padding: 10px;   
   }
-.hello {
-  grid-area: hello;
-}
+.cal {
+  grid-area: cal;
+  width: 60%;
+  justify-self: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(1,1,1,0.7);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: 'Rock Salt', cursive;
+  }
+
 
 body {
   display: grid;
@@ -34,13 +46,15 @@ body {
       "... clock ..."
       "... todo ..."
       "... calc ..."
+      "... cal ..."
       "... foot ...";
   grid-row-gap: 10px;
   background-image: url(./BlancoRiverSunset.jpg);
-  height: 100vh;
+  height: auto;
+  width: auto;
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;
+  background-size: cover;/*try contain once you get grid sorted*/
   position: relative;
   }
 
@@ -87,18 +101,86 @@ p {
 .row {
   display: flex;
   justify-content: center;
-  grid-auto-flow: dense;
+ 
+}
+.screen {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
 }
 .screen input[type=text] {
   background-color:rgb(230, 152, 121);
   width: 100%;
+  align-self: center;
   margin-bottom: 5%
 }
+
 /*Motivational Speech!*/
 .hello a {
-  
+
+}  
+
+/*Calendar*/
+.month-indicator {
+  color: rgb(230, 152, 121);
+  text-align: center;
+  font-weight: 500;
 }
-/*Clock code from https://codepen.io/Trikaal/pen/eYOegxm. Is this ok to do, use something from codepen? I changed the fonts, colors, backgrounds, and some of the layout to make it work with my grid.*/
+.day-of-week,
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-of-week {
+  margin-top: 1.25em;
+}
+
+.day-of-week > * {
+  font-size: 0.7em;
+  color: rgb(25, 194, 157);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+/* Dates */
+.date-grid {
+  margin-top: 0.5em;
+}
+
+/* Positioning the first day */
+.date-grid button:first-child {
+  grid-column: 6;
+}
+
+/* Style for each day */
+.date-grid button {
+  position: relative;
+  border: 0;
+  width: 4.5ch;
+  height: 4.5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: rgb(25, 194, 157);
+}
+
+.date-grid button:hover,
+.date-grid button:focus {
+  outline: none;
+  background-color: rgb(230, 152, 121);
+  color: #373d44;
+}
+
+.date-grid button:active,
+.date-grid button.is-selected {
+  background-color: #373d44;
+  color: rgb(25, 194, 157);
+}
+
+/*Clock code from https://codepen.io/Trikaal/pen/eYOegxm. Is this ok to do, use something from codepen? 
+I changed the fonts, colors, backgrounds, and some of the layout to make it work with my grid.*/
 section.jsDigitalClock{
     padding: 10px 0;
     width: 75vw;
