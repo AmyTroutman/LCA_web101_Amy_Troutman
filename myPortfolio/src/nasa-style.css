@@ -1,0 +1,63 @@
+body {
+    width: 850px;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.nasa-img {
+    background-image: url("./rainbowCupcake.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #9b4f4f;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+ 
+footer {
+    display: flex;
+    background-color: rgb(224, 222, 222);
+    height: 324px;
+    justify-content: space-between;
+  }
+h2 {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-kerning: auto;
+  }
+footer div {
+    width: 270px;
+    padding: 20px;
+  }
+.contact {
+    text-transform: capitalize;
+  }
+textarea {
+    resize: none;
+    border: none;
+}
+
+button {
+    border: none;
+    margin-top: 10px;
+    padding: 5px 12px;
+    background-color: rgb(73, 71, 71);
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+}
