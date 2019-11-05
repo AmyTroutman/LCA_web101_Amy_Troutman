@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    font-family: 'Playfair Display', serif;
+}
+header {
+    grid-area: header;
+    display: flex;
+}
+.logo {
+    width:300px;
+    height: 300px;
+    padding: 50px;
+    margin: 30px;
+    order: 0;
+}
+.must {
+    
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-size: 50px;
+    text-align:center;
+}
+nav {
+    
+}
+
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
