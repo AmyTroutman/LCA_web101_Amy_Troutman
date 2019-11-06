@@ -2,36 +2,62 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-    "header header header"
+    "... logo ..."
+    "nav nav nav"
     "main main main"
     "footer footer footer";
     font-family: 'Playfair Display', serif;
+    
 }
-header {
-    grid-area: header;
-    display: flex;
-}
+/*head bit*/
 .logo {
-    width:300px;
-    height: 300px;
-    padding: 50px;
-    margin: 30px;
-    order: 0;
+    width: 100px;
+    height: 100px;
+    grid-area: logo;
 }
 .must {
-    
     transform: rotate(90deg);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 80px;
     text-align:center;
 }
-nav {
-    
+.logo p {
+    padding: 2%;
+    margin: 2%;
 }
-
+nav {
+  grid-area: nav;  
+}
+/*main bit*/
 main {
     grid-area: main;
 }
+.splash {
+    background-image: url(./img/splashBack.jpg);
+}
+.splash img {
+    width: 960px;
+    height: 369px;
+}
+.pics img {
+    width: 296px;
+    height: 238px;
+    border: 2px black solid;
+}
+a {
+    text-decoration: none;
+}
+/*foot bit*/
 footer {
     grid-area: footer;
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
 }
