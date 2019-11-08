@@ -6,19 +6,22 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr .5fr 2fr 1fr .5fr;
     grid-template-areas: 
-    "... logo ..."
+    "logo logo logo"
     "nav nav nav"
-    "main main main"
+    "splash splash splash"
+    "pics pics pics"
     "footer footer footer";
     font-family: 'Playfair Display', serif;
     
 }
+
 /*head bit*/
 .logo {
     width: 100px;
     height: 100px;
     grid-area: logo;
     background-color: purple;
+    justify-self: center;
 }
 .must {
     transform: rotate(90deg);
@@ -33,23 +36,59 @@ body {
 }
 nav {
   grid-area: nav;
-  background-color: red;  
+  display:flex;
+  justify-content: center;
+  background-color: red; 
+  width: 100%; 
 }
+nav a {
+    padding: 3%;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
 /*main bit*/
-main {
-    grid-area: main;
-}
 .splash {
-    background-color: blue;   
+    grid-area: splash;
+    display: flex;
+    justify-content: flex-end;
+    background-color: orange;
+    background-image: url("./img/splashBack.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 2% 0;
 }
-.splash img {
-    width: 900px;
-    height: 369px;
+.words { 
+    padding: 5%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
+.words span {
+    background-color: black;
+    color: white;
+    padding: 2%;
+    margin: 2%;
+}
+.words h1 {
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+}
+button {
+    width: 30%;
+    height: 7%;
+}
+
+/*baby gallery*/
 .pics {
+    grid-area: pics;
     background-color: yellow;
     display: flex;
     justify-content: space-around;
+    margin: 2% 0;
+    padding: 2%;
 }
 .pics img {
     width: 296px;
@@ -60,12 +99,15 @@ a {
     text-decoration: none;
     color: black;
 }
+
 /*foot bit*/
 footer {
     grid-area: footer;
     background-color: green;
     display: flex;
     justify-content: space-around;
+    margin: 2% 0;
+    padding: 2%;
 }
 .social a {
     border: 2px solid black;
