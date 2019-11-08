@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
 body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr .5fr 2fr 1fr .5fr;
     grid-template-areas: 
     "... logo ..."
     "nav nav nav"
@@ -14,30 +18,38 @@ body {
     width: 100px;
     height: 100px;
     grid-area: logo;
+    background-color: purple;
 }
 .must {
     transform: rotate(90deg);
     font-weight: bold;
     font-size: 80px;
     text-align:center;
+    background-color: pink;
 }
 .logo p {
     padding: 2%;
     margin: 2%;
 }
 nav {
-  grid-area: nav;  
+  grid-area: nav;
+  background-color: red;  
 }
 /*main bit*/
 main {
     grid-area: main;
 }
 .splash {
-    background-image: url(./img/splashBack.jpg);
+    background-color: blue;   
 }
 .splash img {
-    width: 960px;
+    width: 900px;
     height: 369px;
+}
+.pics {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
 }
 .pics img {
     width: 296px;
@@ -46,10 +58,19 @@ main {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 /*foot bit*/
 footer {
     grid-area: footer;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+}
+.social a {
+    border: 2px solid black;
+    padding: 3px;
+    margin: 3px;
 }
 
 /* Medium and up (Tablets) */
