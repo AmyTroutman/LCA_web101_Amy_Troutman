@@ -3,32 +3,33 @@
 }
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr .5fr 2fr 1fr .5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "logo logo logo"
-    "nav nav nav"
+    ". logo ."
+    ". nav ."
     "splash splash splash"
-    "pics pics pics"
+    ". pics ."
     "footer footer footer";
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arimo', sans-serif;
     
 }
 
 /*head bit*/
 .logo {
-    width: 100px;
-    height: 100px;
+    
     grid-area: logo;
-    background-color: purple;
     justify-self: center;
+    font-family: 'Pacifico', cursive;
+}
+.logo h1 {
+    font-size: 24px;
 }
 .must {
     transform: rotate(90deg);
     font-weight: bold;
     font-size: 80px;
     text-align:center;
-    background-color: pink;
 }
 .logo p {
     padding: 2%;
@@ -37,8 +38,7 @@ body {
 nav {
   grid-area: nav;
   display:flex;
-  justify-content: center;
-  background-color: red; 
+  justify-content: center; 
   width: 100%; 
 }
 nav a {
@@ -52,16 +52,16 @@ nav a {
     grid-area: splash;
     display: flex;
     justify-content: flex-end;
-    background-color: orange;
     background-image: url("./img/splashBack.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 2% 0;
+    
 }
 .words { 
-    padding: 5%;
-    width: 40%;
+    padding: 2%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -75,17 +75,25 @@ nav a {
     background-color: white;
     padding: 2%;
     text-align: center;
+    font-family: 'Ultra', serif;
 }
 button {
-    width: 30%;
-    height: 7%;
+    margin-right: 40%;
+    padding: 10px 10px;
+    background-color: #45d3bb;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
 }
 
 /*baby gallery*/
 .pics {
     grid-area: pics;
-    background-color: yellow;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin: 2% 0;
     padding: 2%;
@@ -99,15 +107,18 @@ a {
     text-decoration: none;
     color: black;
 }
-
+.pics a p {
+    font-family: 'Ultra', serif;
+}
 /*foot bit*/
 footer {
     grid-area: footer;
-    background-color: green;
     display: flex;
     justify-content: space-around;
     margin: 2% 0;
     padding: 2%;
+    background-color: black;
+    color: white;
 }
 .social a {
     border: 2px solid black;
@@ -117,10 +128,28 @@ footer {
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
-
+    body {
+        grid-template-areas: 
+    ". logo ."
+    ". nav ."
+    ". splash ."
+    ". pics ."
+    ". footer .";
+    }
 }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
+    body {
+        grid-template-areas: 
+    ". logo ."
+    "nav nav nav"
+    "splash splash splash"
+    "pics pics pics"
+    "footer footer footer";
+    }
 
+    .pics {
+        flex-direction: row;
+    }
 }
