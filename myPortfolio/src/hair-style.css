@@ -23,7 +23,8 @@ body {
     font-family: 'Pacifico', cursive;
 }
 .logo h1 {
-    font-size: 24px;
+    font-size: 80px;
+    margin-top: -10%;
 }
 .must {
     transform: rotate(90deg);
@@ -31,20 +32,17 @@ body {
     font-size: 80px;
     text-align:center;
 }
-.logo p {
-    padding: 2%;
-    margin: 2%;
-}
+
 nav {
   grid-area: nav;
   display:flex;
   justify-content: center; 
-  width: 100%; 
+  
 }
 nav a {
     padding: 3%;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /*main bit*/
@@ -76,6 +74,7 @@ nav a {
     padding: 2%;
     text-align: center;
     font-family: 'Ultra', serif;
+    text-transform: uppercase;
 }
 button {
     margin-right: 40%;
@@ -94,13 +93,13 @@ button {
     grid-area: pics;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 2% 0;
-    padding: 2%;
+    justify-content: space-evenly;
+    margin: 2% 5%;
+    padding: 2% 5% 2% 2%;
 }
 .pics img {
-    width: 296px;
-    height: 238px;
+    width: 307px;
+    height: 307px;
     border: 2px black solid;
 }
 a {
@@ -110,6 +109,13 @@ a {
 .pics a p {
     font-family: 'Ultra', serif;
 }
+.minigal {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 5%;
+}
+
 /*foot bit*/
 footer {
     grid-area: footer;
@@ -124,6 +130,16 @@ footer {
     border: 2px solid black;
     padding: 3px;
     margin: 3px;
+}
+.fab {
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 2em;
+}
+.fa-facebook-f {
+    padding-right: 9px;
+    padding-left: 9px;
 }
 
 /* Medium and up (Tablets) */
