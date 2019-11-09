@@ -11,7 +11,8 @@ body {
     "splash splash splash"
     ". pics ."
     "footer footer footer";
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
     
 }
 
@@ -24,13 +25,14 @@ body {
 }
 .logo h1 {
     font-size: 80px;
-    margin-top: -10%;
+    margin-top: -20%;
 }
 .must {
     transform: rotate(90deg);
     font-weight: bold;
-    font-size: 80px;
+    font-size: 100px;
     text-align:center;
+    font-family: 'Limelight', cursive;
 }
 
 nav {
@@ -45,6 +47,9 @@ nav a {
     font-weight: 500;
 }
 
+.selected {
+    color: #45d3bb;
+}
 /*main bit*/
 .splash {
     grid-area: splash;
@@ -64,21 +69,25 @@ nav a {
     flex-direction: column;
 }
 .words span {
-    background-color: black;
+    background-color: #1d1e1f;
     color: white;
     padding: 2%;
     margin: 2%;
+    
 }
-.words h1 {
+.beacon {
     background-color: white;
+    
     padding: 2%;
     text-align: center;
-    font-family: 'Ultra', serif;
+    font-family: 'Limelight', cursive;
     text-transform: uppercase;
+    font-size: 20px;
 }
-button {
-    margin-right: 40%;
-    padding: 10px 10px;
+.read {
+    margin-top: 5%;
+    padding: 10px;
+    width: 50%;
     background-color: #45d3bb;
     color: white;
     border: none;
@@ -95,21 +104,25 @@ button {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 2% 5%;
-    padding: 2% 5% 2% 2%;
+    padding: .5% 5% .5% 2%;
 }
 .pics img {
-    width: 307px;
-    height: 307px;
+    width: 257px;
+    height: 257px;
     border: 2px black solid;
+    transition: 0.5s ease-in-out;
+    opacity: .8;
+}
+.pics img:hover {
+    opacity: 1;
 }
 a {
     text-decoration: none;
     color: black;
-}
-.pics a p {
-    font-family: 'Ultra', serif;
+    padding: 2%;
 }
 .minigal {
+    font-family: 'Limelight', cursive;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -121,13 +134,18 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
     margin: 2% 0;
     padding: 2%;
-    background-color: black;
+    background-color: #1d1e1f;
     color: white;
 }
+footer p {
+    align-self: center;
+    margin: 3%;
+}
 .social a {
-    border: 2px solid black;
+    border: 2px solid #1d1e1f;
     padding: 3px;
     margin: 3px;
 }
@@ -152,6 +170,25 @@ footer {
     ". pics ."
     ". footer .";
     }
+    .pics {
+        flex-direction: row;
+    }
+    .pics img {
+        width: 307px;
+        height: 307px;
+    }
+    footer {
+        margin: 2% 0;
+    padding: 2%;
+    }
+    footer p {
+        margin: 0;
+    }
+    .read {
+        width: 20%;
+        padding: 15px;
+        margin-top: 2%;
+    }
 }
 
 /* Large and up (Desktops) */
@@ -164,8 +201,13 @@ footer {
     "pics pics pics"
     "footer footer footer";
     }
-
-    .pics {
-        flex-direction: row;
+    .beacon {
+        font-size: 26px;
+        width: 80%;
     }
+    .words span {
+        width: 70%;
+        font-size: 24px;
+    }
+    
 }
