@@ -55,7 +55,7 @@ nav a {
     grid-area: splash;
     display: flex;
     justify-content: flex-end;
-    background-image: url("./img/splashBack.jpg");
+    background-image: url("../img/splashBack.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
