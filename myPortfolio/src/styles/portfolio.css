@@ -1,18 +1,33 @@
 body {
-    display: gird;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: 
-    "nav nav"
+    grid-auto-rows: 20% 30% 70% 70% 70%;
+    grid-template-areas:
+    "nav nav" 
     "header header"
-    "dash vid1"
-    "vid2 nasa"
-    "hair vid3";
+    "pf1 vf1"
+    "vf2 pf2"
+    "pf3 vf3";
+    background-color: #373d44;
 }
 
 /*header stuff*/
+header {
+    grid-area: header;
+    justify-self: center;
+    align-content: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 5em;
+    color:rgb(230, 152, 121)
+}
 
 /*nav stuff*/
+nav {
+    grid-area: nav;
+    margin: 2%;
+    width: 100%;
+    
+}
 /*Robin...so way back at the beginning, they had us copy/paste a bunch of code for our landing page. 
 In the html, the nav links all have a class called "has border". 
 In the css, however, they refer to it as "has-border". So all this time, those stupid nav links
@@ -32,3 +47,31 @@ weren't being styled by .has-border, but instead by the nav a selector I was usi
   }
 
 /*iframes*/
+.pf1 {
+    grid-area: pf1;
+    margin: 5%;
+}
+.pf2 {
+    grid-area: pf2;
+    margin: 5%;
+}
+.pf3 {
+    grid-area: pf3;
+    margin: 5%;
+    background-color: white;
+}
+.vf1 {
+    grid-area: vf1;
+    margin: 5%;
+}
+.vf2 {
+    grid-area: vf2;
+    margin: 5%;
+}
+.vf3 {
+    grid-area: vf3;
+    margin: 5%;
+}
+.videoFrame, .projectFrame {
+    border: 1px solid rgb(25, 194, 157);
+}
