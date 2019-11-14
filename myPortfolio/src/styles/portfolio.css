@@ -28,10 +28,7 @@ nav {
     width: 100%;
     
 }
-/*Robin...so way back at the beginning, they had us copy/paste a bunch of code for our landing page. 
-In the html, the nav links all have a class called "has border". 
-In the css, however, they refer to it as "has-border". So all this time, those stupid nav links
-weren't being styled by .has-border, but instead by the nav a selector I was using. */
+
 .has-border {
     margin: 2% 2% 3%;
     height: 10%;
