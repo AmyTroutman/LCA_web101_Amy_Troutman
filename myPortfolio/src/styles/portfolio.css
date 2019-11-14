@@ -1,13 +1,16 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 20% 30% 70% 70% 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 30% repeat(6, 70%);
     grid-template-areas:
-    "nav nav" 
-    "header header"
-    "pf1 vf1"
-    "vf2 pf2"
-    "pf3 vf3";
+    "header" 
+    "header"
+    "pf1"
+    "vf1"
+    "pf2"
+    "vf2"
+    "pf3"
+    "vf3";
     background-color: #373d44;
 }
 
@@ -18,27 +21,31 @@ header {
     align-content: center;
     font-family: 'Satisfy', cursive;
     font-size: 5em;
-    color:rgb(230, 152, 121)
+    color:rgb(230, 152, 121);
+    margin: 2%;
 }
 
+h1 {
+    border-bottom: 2px solid rgb(25, 194, 157);
+}
 /*nav stuff*/
 nav {
     grid-area: nav;
-    margin: 2%;
-    width: 100%;
-    
+    display: flex;
+    justify-content: center;
+    margin: 10%;
 }
 
 .has-border {
-    margin: 2% 2% 3%;
-    height: 10%;
-    width: 15%;
+    margin: 2%;
+    height: 8%;
+    width: 100%;
     color: rgb(25, 194, 157);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family:'Rock Salt', cursive;
+    font-size: 14px;
     border-radius: 25px;
     background: rgb(1,1,1,0.4);
-    padding: 15px; 
+    padding: 2% 7%; 
     text-align: center;
     border: 2px solid rgb(242, 247, 221);
   }
@@ -71,4 +78,20 @@ nav {
 }
 .videoFrame, .projectFrame {
     border: 1px solid rgb(25, 194, 157);
+}
+
+/*media qUeRiEs*/
+@media (min-width: 992px){
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 20% 30% 70% 70% 70%;
+        grid-template-areas:
+        "header header" 
+        "header header"
+        "pf1 vf1"
+        "vf2 pf2"
+        "pf3 vf3";
+        background-color: #373d44;
+    }
 }
