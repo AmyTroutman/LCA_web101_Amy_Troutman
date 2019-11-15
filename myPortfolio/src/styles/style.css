@@ -60,7 +60,7 @@ body {
     color:rgb(230, 152, 121);
     grid-column: 2/3;
     margin: 3% auto;
-    border-bottom: 2px solid rgb(25, 194, 157);
+    text-decoration: underline rgb(25, 194, 157);
     font-family: 'Satisfy', cursive;
     font-size: 72px;
   }
@@ -69,7 +69,7 @@ body {
     grid-column: 2/3;
     margin: 3% auto;
     font-style: italic;
-    color: whitesmoke;
+    color: rgb(242, 247, 221);
     font-family: 'Rock Salt', cursive;
   }
   
@@ -82,11 +82,11 @@ body {
     font-size: 20px;
     border: 2px solid rgb(25, 194, 157);
     border-radius: 25px;
-    background: transparent;
+    background: rgb(1,1,1,0.4);
     padding: 20px; 
     padding-bottom: 7%;
     text-align: match-parent;
-    color: whitesmoke;
+    color: rgb(242, 247, 221);
     letter-spacing: 16px;
     font-family: 'Special Elite', cursive;
   }

@@ -1,10 +1,9 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 30% repeat(6, 70%);
+    grid-template-rows: 15% repeat(6, 30%);
     grid-template-areas:
     "header" 
-    "header"
     "pf1"
     "vf1"
     "pf2"
@@ -12,7 +11,7 @@ body {
     "pf3"
     "vf3";
     background-color: #373d44;
-    
+    grid-row-gap: 3%;
 }
 
 /*header stuff*/
@@ -24,10 +23,11 @@ header {
     font-size: 4em;
     color:rgb(230, 152, 121);
     margin: 2%;
+   
 }
 
 h1 {
-    border-bottom: 3px solid rgb(25, 194, 157);
+    text-decoration: underline rgb(25, 194, 157);
 }
 /*nav stuff*/
 nav {
@@ -92,23 +92,31 @@ h2 {
     font-size: 1.5em;
     color: rgb(242, 247, 221);
     text-align: center;
-    text-decoration-line: overline underline;
+    text-decoration-line: overline underline;   
 }
+
 /*media qUeRiEs*/
+/*Tablets*/
+@media (min-width: 768px) {
+
+}
+/*Desktop*/
 @media (min-width: 992px){
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 20% 30% 70% 70% 70%;
+        grid-auto-rows: repeat(4, 70%);
         grid-template-areas:
         "header header" 
-        "header header"
         "pf1 vf1"
         "vf2 pf2"
         "pf3 vf3";
         background-color: #373d44;
+        grid-row-gap: 2%;
+        margin-bottom: 20%;
     }
     header {
         font-size: 5em;
+        margin-bottom: 50%;
     }
 }
