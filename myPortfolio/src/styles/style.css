@@ -9,7 +9,7 @@ body {
   
   .logo {
     width: auto;
-    height: 80%;
+    height: 100%;
     margin: 3% auto;
     grid-row: 2;
   }
@@ -28,25 +28,18 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
   
-  nav > a {
-    margin: 2% 2% 3%;
-    height: 10%;
-    width: 15%;
+  .has-border {
+    margin: 2%;
+    height: 8%;
+    width: 10%;
     color: rgb(25, 194, 157);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family:'Rock Salt', cursive;
+    font-size: 14px;
     border-radius: 25px;
     background: rgb(1,1,1,0.4);
-    padding: 15px; 
+    padding: 10px; 
     text-align: center;
     border: 2px solid rgb(242, 247, 221);
-  }
-  
-  .has-border {
-    border-radius: 25px;
-    border: 2px solid rgb(25, 194, 157);
-    background: none;
-    padding: 15px; 
   }
   
   nav {
@@ -67,7 +60,7 @@ body {
     color:rgb(230, 152, 121);
     grid-column: 2/3;
     margin: 3% auto;
-    border-bottom: 2px solid rgb(25, 194, 157);
+    text-decoration: underline rgb(25, 194, 157);
     font-family: 'Satisfy', cursive;
     font-size: 72px;
   }
@@ -76,7 +69,7 @@ body {
     grid-column: 2/3;
     margin: 3% auto;
     font-style: italic;
-    color: whitesmoke;
+    color: rgb(242, 247, 221);
     font-family: 'Rock Salt', cursive;
   }
   
@@ -89,11 +82,11 @@ body {
     font-size: 20px;
     border: 2px solid rgb(25, 194, 157);
     border-radius: 25px;
-    background: transparent;
+    background: rgb(1,1,1,0.4);
     padding: 20px; 
     padding-bottom: 7%;
     text-align: match-parent;
-    color: whitesmoke;
+    color: rgb(242, 247, 221);
     letter-spacing: 16px;
     font-family: 'Special Elite', cursive;
   }
