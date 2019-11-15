@@ -66,7 +66,7 @@ input[type=text] {
 .doIt{
   background-color: rgb(25, 194, 157);
   border: none;
-  color: white;
+  color: rgb(242, 247, 221);
   font-size: 20px;
   font-family: 'Homemade Apple', cursive;
   margin: 4px 2px;
@@ -250,7 +250,7 @@ section.jsDigitalClock{
   }
   
   section.jsDigitalClock #dClockTime span.dText {
-    color: #DEE2E6;
+    color: rgb(242, 247, 221);
     text-transform: uppercase;
     font-family: 'Special Elite', cursive;
     font-weight: 300;
@@ -267,7 +267,7 @@ section.jsDigitalClock{
     font-weight: 700;
     font-size: 36px;
     display: block;
-    color: #DEE2E6;
+    color: rgb(242, 247, 221);
     letter-spacing: 1px;
     text-align: center;
     width: 65px;
@@ -280,7 +280,7 @@ section.jsDigitalClock{
     font-weight: 700;
     font-size: 52px;
     line-height: 1;
-    color: #DEE2E6;
+    color: rgb(242, 247, 221);
   }
   
   section.jsDigitalClock #dClockTime:after {

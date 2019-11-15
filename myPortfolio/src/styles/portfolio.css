@@ -21,13 +21,13 @@ header {
     justify-self: center;
     align-content: center;
     font-family: 'Satisfy', cursive;
-    font-size: 5em;
+    font-size: 4em;
     color:rgb(230, 152, 121);
     margin: 2%;
 }
 
 h1 {
-    border-bottom: 2px solid rgb(25, 194, 157);
+    border-bottom: 3px solid rgb(25, 194, 157);
 }
 /*nav stuff*/
 nav {
@@ -89,8 +89,10 @@ nav {
 
 h2 {
     font-family: 'Bad Script', cursive; 
-    font-size: 14px;
-    color: white;
+    font-size: 1.5em;
+    color: rgb(242, 247, 221);
+    text-align: center;
+    text-decoration-line: overline underline;
 }
 /*media qUeRiEs*/
 @media (min-width: 992px){
@@ -105,5 +107,8 @@ h2 {
         "vf2 pf2"
         "pf3 vf3";
         background-color: #373d44;
+    }
+    header {
+        font-size: 5em;
     }
 }
