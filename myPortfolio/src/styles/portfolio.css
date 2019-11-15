@@ -12,6 +12,7 @@ body {
     "pf3"
     "vf3";
     background-color: #373d44;
+    
 }
 
 /*header stuff*/
@@ -62,7 +63,6 @@ nav {
 .pf3 {
     grid-area: pf3;
     margin: 5%;
-    background-color: white;
 }
 .vf1 {
     grid-area: vf1;
@@ -76,10 +76,22 @@ nav {
     grid-area: vf3;
     margin: 5%;
 }
-.videoFrame, .projectFrame {
+.projectFrame {
     border: 1px solid rgb(25, 194, 157);
+    
 }
 
+.projectFrame:hover {
+    transition-duration: .5s;
+    transition-property: all;
+    border: 5px dotted rgb(230, 152, 121);
+}
+
+h2 {
+    font-family: 'Bad Script', cursive; 
+    font-size: 14px;
+    color: white;
+}
 /*media qUeRiEs*/
 @media (min-width: 992px){
     body {
