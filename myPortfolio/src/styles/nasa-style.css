@@ -2,6 +2,7 @@ body {
     width: 850px;
     margin: 0 auto;
     font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(73, 71, 71);
 }
 
 .nasa-img {
