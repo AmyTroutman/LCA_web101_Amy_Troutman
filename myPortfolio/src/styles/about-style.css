@@ -34,7 +34,7 @@ body {
       margin: 3% auto;
   }
 
-  p {
+  .container {
       background-color: rgb(25, 194, 157, 0.5);
       color: rgb(242, 247, 221);
       border: 2px solid rgb(230, 152, 121);
