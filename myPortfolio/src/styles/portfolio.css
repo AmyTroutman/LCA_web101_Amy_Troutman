@@ -46,10 +46,11 @@ nav {
     font-size: 14px;
     border-radius: 25px;
     background: rgb(1,1,1,0.4);
-    padding: 2% 7%; 
+    padding: 1% 4%; 
     text-align: center;
     border: 2px solid rgb(242, 247, 221);
   }
+  
 
 /*iframes*/
 .pf1 {

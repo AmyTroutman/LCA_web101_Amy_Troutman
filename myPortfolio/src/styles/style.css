@@ -28,24 +28,25 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
   
-  .has-border {
-    margin: 2%;
-    height: 8%;
-    width: 10%;
-    color: rgb(25, 194, 157);
-    font-family:'Rock Salt', cursive;
-    font-size: 14px;
-    border-radius: 25px;
-    background: rgb(1,1,1,0.4);
-    padding: 10px; 
-    text-align: center;
-    border: 2px solid rgb(242, 247, 221);
-  }
-  
   nav {
     display: flex;
     justify-content: center;
     width: auto;
+    margin-bottom: 5%;
+  }
+
+.has-border {
+    margin: 2%;
+    height: 8%;
+    width: 100%;
+    padding: 0;
+    color: rgb(25, 194, 157);
+    font-family:'Rock Salt', cursive;
+    font-size: .75em;
+    border-radius: 25px;
+    background: rgb(1,1,1,0.4);
+    text-align: center;
+    border: 2px solid rgb(242, 247, 221);
   }
   
   #profile-pic {
@@ -78,7 +79,6 @@ body {
     margin: 3% auto;
     width: auto;
     height: 50%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border: 2px solid rgb(25, 194, 157);
     border-radius: 25px;
