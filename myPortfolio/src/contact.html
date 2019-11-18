@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <title>Contact Me</title>
 </head>
 
@@ -26,12 +27,12 @@
     <main>
         <h1 class="hey">Hey.</h1>
         <form action="" method="post" class="form">
-            <h1 class="FormHey">Let's Talk
+            <h1 class="formHey">Let's Talk
             </h1>
             <p>Please fill all the texts in the fields.</p>
             <label>
                 <span>Your Name :</span>
-                <input id="name" type="text" name="name" placeholder="My name's Amy! What's your name?" />
+                <input id="name" type="text" name="name" placeholder="My name's Amy!" />
             </label>
 
             <label>
@@ -39,17 +40,11 @@
                 <input id="email" type="email" name="email" placeholder="Wanna be penpals?!" />
             </label>
 
-            <label>
-                <span>Message :</span>
-                <textarea id="message" name="message"
-                    placeholder="Dear Penpal, How are you? I am good. What have you been up to? I've been coding and playing lots of Zelda: A Link to the Past. Anyways, I gotta go. Sincerely, Amy :)"></textarea>
-            </label>
-            <label>
-                <span>Subject :</span><select name="selection">
-                    <option value="Job Inquiry">I'd like a job, please!</option>
-                    <option value="General Question">I've got a question...</option>
-                    <option value="Complaint">I've got a bad feeling about this!</option>
-                </select>
+            <label class="message">
+                <span>Message :</span><span>&nbsp;</span>
+                <textarea id="message" name="message" cols="20" rows="10" placeholder="Dear Penpal, 
+    How are you? I am good. What have you been up to? I've been coding and playing lots of Zelda. Anyways, I gotta go.         
+    Your Pal, Amy :)"></textarea>
             </label>
             <label>
                 <span>&nbsp;</span>
@@ -58,13 +53,16 @@
         </form>
         <div class="connect">
             <h2>Or let's connect at one of these places!</h2>
-            <a href="mailto:amyrtroutman@gmail.com"><img src="./img/email-3-16.png" height="20px" width="20px">Email</a>
-            </br>
-            <a href="https://github.com/AmyTroutman"><img src="./img/github-11-16.png" height="20px"
-                    width="20px">Github</a>
-            </br>
-            <a href="https://linkedin.com/in/https://www.linkedin.com/in/amy-troutman/"><img
-                    src="./img/linkedin-2-16.png" height="20px" width="20px">LinkedIn</a>
+            <div id="social">
+                <a href="mailto:amyrtroutman@gmail.com"><img src="./img/email-3-16.png" height="20px"
+                        width="20px">Email</a>
+               
+                <a href="https://github.com/AmyTroutman"><img src="./img/github-11-16.png" height="20px"
+                        width="20px">Github</a>
+                
+                <a href="https://linkedin.com/in/https://www.linkedin.com/in/amy-troutman/"><img
+                        src="./img/linkedin-2-16.png" height="20px" width="20px">LinkedIn</a>
+            </div>
         </div>
     </main>
     <footer>
