@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/animate.min.css">
   <link rel="stylesheet" href="./src/styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -16,20 +17,22 @@
 
 <body></body>
 <header>
-  <img src="./src/img/artLogoColor.png" class="logo" alt="ART logo">
+  <img src="./src/img/artLogoColor.png" class="logo animated fadeInDown" alt="ART logo">
   <nav>
-    <a class="has-border" href="src/resume.html">Resume </a> 
-    <a class="has-border" href="src/blog.html">My Blog</a>
-    <a class="has-border" href="src/about.html">About Me</a> 
-    <a class="has-border" href="src/contact.html">Contact</a>
+    <a class="has-border animated flipInX delay-1s" href="src/resume.html">Resume </a>
+    <a class="has-border animated flipInX delay-1s" href="src/blog.html">My Blog</a>
+    <a class="has-border animated flipInX delay-2s" href="src/about.html">About Me</a>
+    <a class="has-border animated flipInX delay-2s" href="src/contact.html">Contact</a>
 
   </nav>
 </header>
 <main>
-  <img src="./src/img/myProfilePic.jpg" id="profile-pic" alt="Headshot of Me">
-  <h1>Amy Troutman</h1>
+    <img class="animated goldOut" id="gold-pic" src="./src/img/theGoldblum.jpg" alt="Classy Jeff Goldblum">
+    <img class="animated rollIn" src="./src/img/myProfilePic.jpg" id="profile-pic" alt="Headshot of Me">
+  <h1 class="animated rollIn delay-5s">Amy Troutman</h1>
   <h2>Web Dev Student</h2>
-  <button id="portfolio" onclick="window.location.href='./src/portfolio.html';">Portfolio</button>
+  <button id="portfolio" class="animated heartBeat infinite"
+    onclick="window.location.href='./src/portfolio.html';">Portfolio</button>
 </main>
 </body>
 
