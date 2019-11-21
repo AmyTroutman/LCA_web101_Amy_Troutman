@@ -1,38 +1,24 @@
 body {
-    
+
     background-image: url(../img/CaprockCanyon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /*height: 100vh;
     width: 100vw;*/
   }
-  
-  .logo {
-    width: auto;
-    height: 100%;
-    margin: 3% auto;
-    grid-row: 2;
-  }
 
-  /*I learned more about grid, and switched to fr for units. Made it easier to get things to align and then realign as screen size changed.*/
+  /*top bits*/
   header {
     display: grid;
     grid-template-rows: 1fr 1fr;
     width: 100%;
   }
   
-  main {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
   nav {
     display: flex;
     justify-content: center;
     width: auto;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
 
 .has-border {
@@ -48,15 +34,86 @@ body {
     text-align: center;
     border: 2px solid rgb(242, 247, 221);
   }
+
+  .logo {
+    width: auto;
+    height: 100%;
+    margin: 1% auto;
+    grid-row: 2;
+    animation-duration: 4s;
+  }
+
+  /*main bits*/
   
+  main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -5%;
+  }
+
   #profile-pic {
     width: 300px;
     height: 300px;
     border-radius: 15%;
     margin: 15% auto;
     grid-column: 2/3;
+    animation-duration: 7s;
   }
   
+  #gold-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    margin: 15% auto;
+    grid-column: 2/3;
+    animation-duration: 8s;
+  }
+
+  @-webkit-keyframes goldOut {
+    0% {
+      opacity: 1;
+      
+    }
+    99% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      width: 0;
+      height: 0;
+    }
+  }
+  
+  @keyframes goldOut {
+    0% {
+      opacity: 1;
+     
+    }
+    99% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      width: 0;
+      height: 0;
+    }
+  }
+  
+  .goldOut {
+    -webkit-animation-name: goldOut;
+    animation-name: goldOut;
+  }
+
   h1 {
     color:rgb(230, 152, 121);
     grid-column: 2/3;
@@ -65,7 +122,7 @@ body {
     font-family: 'Satisfy', cursive;
     font-size: 72px;
   }
-  
+
   h2 {
     grid-column: 2/3;
     margin: 3% auto;
@@ -89,6 +146,7 @@ body {
     color: rgb(242, 247, 221);
     letter-spacing: 16px;
     font-family: 'Special Elite', cursive;
+
   }
 
   /* Large and up (Desktops) */
@@ -117,6 +175,10 @@ body {
     }
 
     #profile-pic {
+      width: 200px;
+      height: 200px;
+    }
+    #gold-pic {
       width: 200px;
       height: 200px;
     }
