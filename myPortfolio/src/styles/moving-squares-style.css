@@ -1,0 +1,36 @@
+body {
+    background: #3d3b3b;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.big {
+    width: 50px;
+    height: 50px;
+    background: purple;
+    transition: all 1s linear;
+    
+}
+
+.container:hover .big {
+    transform: scale(2,2), rotate(360deg), translate(500px);
+    background: blue;
+
+}
+
+.small {
+    width: 50px;
+    height: 50px;
+    background: gold;
+    transition : all 1s ease;
+}
+
+.small:hover {
+    transform: scale(.5,.5), rotate(-360deg), translate(-500px);
+    background: orange;
+}
