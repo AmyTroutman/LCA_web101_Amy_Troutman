@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(27, 26, 26);
+}
+
+article {
+    color: rgb(184, 192, 201);
+    width: 40%;
+    margin: 5%;
+    text-align: center;
+}
+
+.strip {
+    width: 30%;
+}
+
+#c1 {
+    background-color: blue;
+}
