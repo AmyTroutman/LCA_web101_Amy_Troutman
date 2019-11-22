@@ -61,7 +61,10 @@ form {
 }
 input, #message {
     font-family: 'Special Elite', cursive;
+    background-image: url(../img/linedPaper.jpg);
+    background-size: 100%;
 }
+
 .message {
     display: flex;
     flex-direction: row;
