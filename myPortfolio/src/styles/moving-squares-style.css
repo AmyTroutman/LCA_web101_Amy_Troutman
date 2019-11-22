@@ -1,69 +1,85 @@
 body {
-    background: #3d3b3b;
+    background-color: #3d3b3b;
 }
 
 .container {
-    width: 50%;
     margin: 2% 50%;
 }
 
 .big {
     width: 50px;
     height: 50px;
-    transition: all 1s linear;
-    
+    -webkit-transition: 5s linear;
+    -moz-transition: 5s linear;
+    -o-transition: 5s linear;
+    -ms-transition: 5s linear;
+    transition: 5s linear;
 }
 
 .container:hover .big {
-    transform: scale(2), rotate(360deg), translate(500px);
-    background: rgb(106, 106, 114);
-
+    background-color: rgb(106, 106, 114);
+    -webkit-transform: scale(2,2) translate(300px) rotate(360deg);
+    -moz-transform: scale(2,2) translate(300px) rotate(360deg);
+    -o-transform: scale(2,2) translate(300px) rotate(360deg);
+    -ms-transform: scale(2,2) translate(300px) rotate(360deg);
+    transform: scale(2,2) translate(300px) rotate(360deg);
+    border-radius: 30px;
 }
 
 .small {
     width: 50px;
     height: 50px;
-    transition : all 1s ease;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -o-transition: 5s;
+    -ms-transition: 5s;
+    transition: 5s;
+    border-radius: 30px;
 }
 
 .container:hover .small{
-    transform: scale(.5), rotate(-360deg), translate(-500px);
-    background: rgb(150, 142, 129);
+    -webkit-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    -moz-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    -o-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    -ms-transform: scale(0.5,0.5) translate(-500px) rotate(-4680deg);
+    transform: scale(0.5,0.5) translate(-500px) rotate(-360deg);
+    background-color: rgb(150, 142, 129);
+    border-radius: 0px;
 }
 
 .c1 {
-    background: green;
+    background-color: green;
 }
 .c2 {
-    background: yellowgreen;
+    background-color: yellowgreen;
 }
 .c3 {
-    background: yellow;
+    background-color: yellow;
 }
 .c4 {
-    background: orange;
+    background-color: orange;
 }
 .c5 {
-    background: orangered;
+    background-color: orangered;
 }
 .c6 {
-    background: red;
+    background-color: red;
 }
 .c7 {
-    background: indianred;
+    background-color: indianred;
 }
 .c8 {
-    background: palevioletred;
+    background-color: palevioletred;
 }
 .c9 {
-    background: violet;
+    background-color: violet;
 }
 .c10 {
-    background: purple;
+    background-color: purple;
 }
 .c11 {
-    background: indigo;
+    background-color: indigo;
 }
 .c12 {
-    background: navy;
+    background-color: navy;
 }
