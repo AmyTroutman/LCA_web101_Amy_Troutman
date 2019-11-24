@@ -1,0 +1,58 @@
+body {
+  background-color: #1b1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: #b8c0c9;
+}
+
+header {
+  background-color: #ec7e35;
+  height: 300px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  color: #b8c0c9;
+  text-align: center;
+  padding-top: 1%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 3em;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+  color: #b8c0c9;
+}
+span {
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  margin: 3%;
+  text-decoration: overline;
+  animation-delay: 0.5s;
+}
+
+article {
+  color: #b8c0c9;
+  font-family: "Montserrat", sans-serif;
+  width: auto;
+  margin: 2em;
+  text-align: center;
+}
+
+p {
+  margin: 3%;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    margin-top: 7%;
+    font-size: 4em;
+  }
+}
