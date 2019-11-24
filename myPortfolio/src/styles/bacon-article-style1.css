@@ -8,7 +8,7 @@ a {
 }
 
 header {
-  background-color: #431463;
+  background-color: #ec7e35;
   height: 300px;
   font-family: "Montserrat", sans-serif;
 }
@@ -27,15 +27,27 @@ h1 {
   font-weight: 400;
   color: #b8c0c9;
 }
-
 span {
   font-weight: 700;
 }
 
-.video {
+h2 {
+  text-align: center;
+  margin: 3%;
+  text-decoration: overline;
+  animation-delay: 0.5s;
+}
+
+article {
+  color: #b8c0c9;
+  font-family: "Montserrat", sans-serif;
   width: auto;
-  height: 30em;
-  margin: 5%;
+  margin: 2em;
+  text-align: center;
+}
+
+p {
+  margin: 3%;
 }
 
 @media (min-width: 992px) {
