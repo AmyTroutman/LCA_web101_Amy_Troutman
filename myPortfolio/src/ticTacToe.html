@@ -10,20 +10,25 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
+    <header>
+      <h1>Tic</h1>
+      <h1>Tac</h1>
+      <h1>Toe</h1>
+    </header>
     <div class="board">
-      <div class="ttt" id="topL"></div>
-      <div class="ttt" id="topM"></div>
-      <div class="ttt" id="topR"></div>
-      <div class="ttt" id="midL"></div>
-      <div class="ttt" id="midM"></div>
-      <div class="ttt" id="midR"></div>
-      <div class="ttt" id="botL"></div>
-      <div class="ttt" id="botM"></div>
-      <div class="ttt" id="botR"></div>
+      <div class="ttt" id="topL">1</div>
+      <div class="ttt" id="topM">2</div>
+      <div class="ttt" id="topR">3</div>
+      <div class="ttt" id="midL">4</div>
+      <div class="ttt" id="midM">5</div>
+      <div class="ttt" id="midR">6</div>
+      <div class="ttt" id="botL">7</div>
+      <div class="ttt" id="botM">8</div>
+      <div class="ttt" id="botR">9</div>
     </div>
     <aside>
-      <button id="x">X</button>
-      <button id="o">O</button>
+      <button id="x" onclick="changeMarkerToX()">X</button>
+      <button id="o" onclick="changeMarkerToO()">O</button>
     </aside>
   </body>
 </html>
