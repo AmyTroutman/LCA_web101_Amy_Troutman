@@ -31,9 +31,12 @@ h1 {
 }
 
 .ttt {
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 200px;
   background-color: #2e275a;
+  color: white;
+  font-size: 5em;
+  text-align: center;
 }
 
 #topL {
