@@ -16,15 +16,17 @@
       <h1>Toe</h1>
     </header>
     <div class="board">
+      <!--is there such a thing as too many onclick calls?? 
+        Does order matter? Should name grab happen before place marker??-->
       <p class="ttt" id="topL" onclick="placeMarker(), getName()"></p>
-      <p class="ttt" id="topM" onclick="placeMarker()"></p>
-      <p class="ttt" id="topR" onclick="placeMarker()"></p>
-      <p class="ttt" id="midL" onclick="placeMarker()"></p>
-      <p class="ttt" id="midM" onclick="placeMarker()"></p>
-      <p class="ttt" id="midR" onclick="placeMarker()"></p>
-      <p class="ttt" id="botL" onclick="placeMarker()"></p>
-      <p class="ttt" id="botM" onclick="placeMarker()"></p>
-      <p class="ttt" id="botR" onclick="placeMarker()"></p>
+      <p class="ttt" id="topM" onclick="placeMarker(), getName()"></p>
+      <p class="ttt" id="topR" onclick="placeMarker(), getName()"></p>
+      <p class="ttt" id="midL" onclick="placeMarker(), getName()"></p>
+      <p class="ttt" id="midM" onclick="placeMarker(), getName()"></p>
+      <p class="ttt" id="midR" onclick="placeMarker(), getName()"></p>
+      <p class="ttt" id="botL" onclick="placeMarker(), getName()"></p>
+      <p class="ttt" id="botM" onclick="placeMarker(), getName()"></p>
+      <p class="ttt" id="botR" onclick="placeMarker(), getName()"></p>
     </div>
     <aside>
       <button id="x" onclick="changeMarkerToX()">X</button>
