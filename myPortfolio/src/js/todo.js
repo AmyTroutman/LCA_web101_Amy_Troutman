@@ -1,5 +1,3 @@
-/* JavaScript Todo */
-
 /*JavaScript Digital Clock*/
 function digitalClock() {
   let currDateTime = new Date();
@@ -104,3 +102,20 @@ function digitalClock() {
   document.getElementById("dDay").innerText = dayString;
 }
 setInterval(digitalClock, 1100);
+
+/* JQuery Todo, thanks to http://jsfiddle.net/daviddavidson/3P6KE/ */
+$(document).ready(function($) {
+  /* forgot this for a good long while, it really helps */
+  $("form").submit(function() {
+    if ($(".input").val() !== "") {
+      var newTask = $(".input").val();
+      var newLi = $("<li>" + newTask + "</li>");
+      newLi.on("click", function() {
+        $(this).remove();
+      });
+      $("ul").append(newLi);
+      $(".input").val("");
+      return false;
+    }
+  });
+});

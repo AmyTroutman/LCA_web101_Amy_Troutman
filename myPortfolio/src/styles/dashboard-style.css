@@ -1,14 +1,13 @@
-
 body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-      "hello hello hello" 
-      "... clock ..."
-      "... todo ..."
-      "... cal ..."
-      "... calc ...";
+    "hello hello hello"
+    "... clock ..."
+    "... todo ..."
+    "... cal ..."
+    "... calc ...";
   grid-row-gap: 10px;
   background-image: url(../img/BlancoRiverSunset.jpg);
   height: auto;
@@ -18,7 +17,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   position: relative;
-  }
+}
 
 /*Motivational Speech!*/
 .hello {
@@ -31,64 +30,71 @@ body {
 /*To Do*/
 .todo {
   grid-area: todo;
-  background-color: rgb(1,1,1,0.7);
+  background-color: rgb(1, 1, 1, 0.7);
   border-radius: 10px;
   width: 50%;
   justify-self: center;
   padding: 10px;
   margin: 10px;
-  }
+}
 h2 {
   text-align: center;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   font-size: 14px;
   background-color: rgb(230, 152, 121);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-ol {
+ul {
   list-style: none;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   font-size: 12px;
-  color: rgb(242, 247, 221)
+  color: rgb(242, 247, 221);
+  text-align: center;
 }
-input[type=text] {
+input[type="text"] {
   width: 100%;
   margin: 4px 2px;
+  background-color: rgb(242, 247, 221, 0.5);
+  color: rgb(242, 247, 221);
 }
 .todo p {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   font-size: 12px;
   text-align: center;
-  color:rgb(230, 152, 121);
+  color: rgb(230, 152, 121);
   padding: none;
 }
-.doIt{
+
+.doIt {
   background-color: rgb(25, 194, 157);
   border: none;
   color: rgb(242, 247, 221);
   font-size: 20px;
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
   margin: 4px 2px;
   width: 100%;
   cursor: pointer;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+#newItemButton {
+  display: none;
+}
 
 /*Calculator*/
 .calc {
   grid-area: calc;
-  background-color: rgb(1,1,1,0.7);
+  background-color: rgb(1, 1, 1, 0.7);
   border-radius: 10px;
   min-width: 20%;
   justify-self: center;
-  padding: 10px;  
-  }
+  padding: 10px;
+}
 .row {
   display: flex;
   justify-content: center;
-  align-items: stretch; 
+  align-items: stretch;
 }
 .row button {
   border: 0;
@@ -97,7 +103,7 @@ input[type=text] {
   border-radius: 50%;
   background-color: transparent;
   color: rgb(25, 194, 157);
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
 }
 .row button:hover,
 .row button:focus {
@@ -113,17 +119,17 @@ input[type=text] {
 }
 .screen p {
   text-align: center;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   font-size: 12px;
   background-color: rgb(230, 152, 121);
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; 
+  border-top-right-radius: 10px;
 }
-.screen input[type=text] {
-  background-color:rgb(242, 247, 221, 0.5);
+.screen input[type="text"] {
+  background-color: rgb(242, 247, 221, 0.5);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-bottom: 5%
+  margin-bottom: 5%;
 }
 
 /*Calendar*/
@@ -133,10 +139,10 @@ input[type=text] {
   justify-self: center;
   padding: 10px;
   margin: 10px;
-  background-color: rgb(1,1,1,0.7);
+  background-color: rgb(1, 1, 1, 0.7);
   border-radius: 10px;
-  font-family: 'Rock Salt', cursive;
-  }
+  font-family: "Rock Salt", cursive;
+}
 .month-indicator {
   background-color: rgb(230, 152, 121);
   text-align: center;
@@ -182,7 +188,7 @@ input[type=text] {
   border-radius: 50%;
   background-color: transparent;
   color: rgb(25, 194, 157);
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
 }
 
 .date-grid button:hover,
@@ -203,108 +209,104 @@ I changed the fonts, colors, backgrounds, and some of the layout to make it work
 .clock {
   grid-area: clock;
 }
-section.jsDigitalClock{
-    padding: 10px 0;
-    width: 75vw;
-  }
-  section.jsDigitalClock h2{
-    font-family: 'Satisfy', cursive;
-    font-weight: 700;
-  }
-  section.jsDigitalClock p{
-    font-family: 'Bad Script', cursive;
-    font-weight: 400;
-  }
-  section.jsDigitalClock .rowHead .col-md-12{
-    text-align: center;  
-  }
-  section.jsDigitalClock #dClock {
-    width: 100%;
-    border: 4px solid rgb(25, 194, 157);
-    border-radius: 10px;
-    padding: 5px;
-  }
-  
-  section.jsDigitalClock #dClockTime {
-   
-    background-color: #373d44;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 15px 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  
-  section.jsDigitalClock #dClockTime span.dText {
-    color: rgb(242, 247, 221);
-    text-transform: uppercase;
-    font-family: 'Special Elite', cursive;
-    font-weight: 300;
-    font-size: 10px;
-    letter-spacing: 1px;
-  }
+section.jsDigitalClock {
+  padding: 10px 0;
+  width: 75vw;
+}
+section.jsDigitalClock h2 {
+  font-family: "Satisfy", cursive;
+  font-weight: 700;
+}
+section.jsDigitalClock p {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+}
+section.jsDigitalClock .rowHead .col-md-12 {
+  text-align: center;
+}
+section.jsDigitalClock #dClock {
+  width: 100%;
+  border: 4px solid rgb(25, 194, 157);
+  border-radius: 10px;
+  padding: 5px;
+}
 
-  section.jsDigitalClock #dClockTime .meridiem {
-      text-transform: lowercase;
-  }
-  
-  section.jsDigitalClock #dClockTime span.dTime {
-    font-family: 'Rock Salt', cursive;
-    font-weight: 700;
-    font-size: 36px;
-    display: block;
-    color: rgb(242, 247, 221);
-    letter-spacing: 1px;
-    text-align: center;
-    width: 65px;
-    line-height: 1;
-  }
-  
-  section.jsDigitalClock #dClockTime span.colon {
-    margin: 15px 5px 0;
-    font-family: 'Homemade Apple', cursive;
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 1;
-    color: rgb(242, 247, 221);
-  }
-  
-  section.jsDigitalClock #dClockTime:after {
-    clear: both;
-    display: block;
-    content: '';
-  }
-  
-  section.jsDigitalClock #dClockDate {
-    
-    padding: 15px 10px;
-    border: 1px solid rgb(25, 194, 157);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-align: center;
-    background-color: rgb(1,1,1,0.5);
-  }
-  
-  section.jsDigitalClock #dClockDate span {
-    font-family: 'Special Elite', cursive;
-    font-weight: 300;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: rgb(230, 152, 121);
-    
-  }
+section.jsDigitalClock #dClockTime {
+  background-color: #373d44;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
 
+section.jsDigitalClock #dClockTime span.dText {
+  color: rgb(242, 247, 221);
+  text-transform: uppercase;
+  font-family: "Special Elite", cursive;
+  font-weight: 300;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+section.jsDigitalClock #dClockTime .meridiem {
+  text-transform: lowercase;
+}
+
+section.jsDigitalClock #dClockTime span.dTime {
+  font-family: "Rock Salt", cursive;
+  font-weight: 700;
+  font-size: 36px;
+  display: block;
+  color: rgb(242, 247, 221);
+  letter-spacing: 1px;
+  text-align: center;
+  width: 65px;
+  line-height: 1;
+}
+
+section.jsDigitalClock #dClockTime span.colon {
+  margin: 15px 5px 0;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1;
+  color: rgb(242, 247, 221);
+}
+
+section.jsDigitalClock #dClockTime:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+section.jsDigitalClock #dClockDate {
+  padding: 15px 10px;
+  border: 1px solid rgb(25, 194, 157);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  background-color: rgb(1, 1, 1, 0.5);
+}
+
+section.jsDigitalClock #dClockDate span {
+  font-family: "Special Elite", cursive;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(230, 152, 121);
+}
