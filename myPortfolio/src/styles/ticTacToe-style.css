@@ -1,9 +1,18 @@
 body {
+  background-color: indigo;
+}
+
+marquee {
+  color: chartreuse;
+  font-size: 2em;
+  margin-top: 5%;
+  margin-bottom: -3%;
+}
+
+.errything {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 5%;
-  background-color: indigo;
 }
 
 header {
@@ -24,10 +33,10 @@ h1 {
     "tl tm tr"
     "ml mm mr"
     "bl bm br";
-
   width: 500px;
   height: 500px;
   justify-content: center;
+  margin: 5%;
 }
 
 .ttt {
@@ -80,7 +89,7 @@ h1 {
 }
 
 button {
-  margin: 15%;
+  margin: 20%;
   border: none;
   background-color: fuchsia;
   color: black;
