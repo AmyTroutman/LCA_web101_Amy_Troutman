@@ -1,0 +1,102 @@
+body {
+  background-color: indigo;
+}
+
+marquee {
+  color: chartreuse;
+  font-size: 2em;
+  margin-top: 5%;
+  margin-bottom: -3%;
+}
+
+.errything {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header {
+  margin: 5%;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 5%;
+  color: chartreuse;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "tl tm tr"
+    "ml mm mr"
+    "bl bm br";
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  margin: 5%;
+}
+
+.ttt {
+  width: 200px;
+  height: 200px;
+  background-color: #2e275a;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+}
+
+#topL {
+  grid-area: tl;
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+#topM {
+  grid-area: tm;
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+#topR {
+  grid-area: tr;
+  border-bottom: 2px white solid;
+}
+#midL {
+  grid-area: ml;
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+#midM {
+  grid-area: mm;
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+#midR {
+  grid-area: mr;
+  border-bottom: 2px white solid;
+}
+#botL {
+  grid-area: bl;
+  border-right: 2px white solid;
+}
+#botM {
+  grid-area: bm;
+  border-right: 2px white solid;
+}
+#botR {
+  grid-area: br;
+}
+
+button {
+  margin: 20%;
+  border: none;
+  background-color: fuchsia;
+  color: black;
+  width: 3em;
+  font-size: 2em;
+}
+
+button:focus {
+  background-color: cyan;
+}

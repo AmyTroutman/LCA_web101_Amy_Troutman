@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/ticTacToe-style.css" />
+    <script src="./js/ticTacToe.js"></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="errything">
+      <header>
+        <h1>Tic</h1>
+        <h1>Tac</h1>
+        <h1>Toe</h1>
+      </header>
+      <div class="board">
+        <!--is there such a thing as too many onclick calls?? Do these need onclick?? 
+        It works, but it seems clunky.-->
+        <p class="ttt" id="topL" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="topM" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="topR" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="midL" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="midM" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="midR" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="botL" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="botM" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="botR" onclick="getName(), placeMarker()"></p>
+      </div>
+      <aside>
+        <button id="x" onclick="changeMarkerToX()">X</button>
+        <button id="o" onclick="changeMarkerToO()">O</button>
+      </aside>
+    </div>
+
+    <marquee
+      >I want to 3d print some js code so I can punch it in the face.</marquee
+    >
+    <marquee
+      >I want to 3d print some js code so I can punch it in the face.</marquee
+    >
+    <marquee
+      >I want to 3d print some js code so I can punch it in the face.</marquee
+    >
+    <marquee
+      >I want to 3d print some js code so I can punch it in the face.</marquee
+    >
+  </body>
+</html>
