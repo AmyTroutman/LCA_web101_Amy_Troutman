@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+[data-column] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 200px;
+  width: 20px;
+  margin: 30px;
+  border: 1px solid lightgray;
+  background-color: black;
+}
+
+[data-color] {
+  border-radius: 10px 10px 0 0;
+  height: 33px;
+  float: left;
+}
+
+[data-color="blue"] {
+  width: 60px;
+  background-color: #041e57;
+}
+
+[data-color="red"] {
+  width: 80px;
+  background-color: #eb053f;
+}
+
+[data-color="yellow"] {
+  width: 100px;
+  background-color: #d3d609;
+}
