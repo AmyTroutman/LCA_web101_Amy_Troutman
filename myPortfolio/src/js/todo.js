@@ -104,8 +104,8 @@ function digitalClock() {
 setInterval(digitalClock, 1100);
 
 /* JQuery Todo, thanks to http://jsfiddle.net/daviddavidson/3P6KE/ */
+/* forgot this for a good long while, it really helps */
 $(document).ready(function($) {
-  /* forgot this for a good long while, it really helps */
   $("form").submit(function() {
     if ($(".input").val() !== "") {
       var newTask = $(".input").val();
@@ -134,3 +134,18 @@ $.ajax({
     $("#ip").html(location.IPv4);
   }
 });
+
+/* clicky clicky */
+/* So, when parrot is clicked, a new div is appended to party. It's given an ID
+of gif and a random parrot class, using the getRandom function. */
+$(".parrot").click(function() {
+  $(".party").append(
+    '<div id="gif" class="parrot-' + getRandom(1, 20) + '"></div>'
+  );
+});
+/* random number picker between 1 and 20 */
+/* I was super overthinking this, just assuming it should be harder to do, 
+but turns out it's pretty simple. */
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
