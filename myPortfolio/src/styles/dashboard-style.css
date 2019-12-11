@@ -7,7 +7,8 @@ body {
     "... clock ..."
     "... todo ..."
     "... cal ..."
-    "... calc ...";
+    "... calc ..."
+    "... geo ...";
   grid-row-gap: 10px;
   background-image: url(../img/BlancoRiverSunset.jpg);
   height: auto;
@@ -167,6 +168,20 @@ input[type="text"] {
   letter-spacing: 0.1em;
   font-variant: small-caps;
   text-align: center;
+}
+
+/* geolocation */
+.geo {
+  grid-area: geo;
+  justify-self: center;
+  background-color: rgb(1, 1, 1, 0.7);
+  color: rgb(242, 247, 221);
+  border-radius: 10px;
+  font-family: "Rock Salt", cursive;
+  font-size: 0.5em;
+  min-width: 15%;
+  padding: 10px;
+  margin: 10px;
 }
 
 /* Dates */
