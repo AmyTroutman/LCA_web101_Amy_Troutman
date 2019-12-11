@@ -1,14 +1,16 @@
+/* Let's get this party started */
 body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
     "hello hello hello"
+    "... geo ..."
     "... clock ..."
     "... todo ..."
     "... cal ..."
     "... calc ..."
-    "... geo ...";
+    "... par ...";
   grid-row-gap: 10px;
   background-image: url(../img/BlancoRiverSunset.jpg);
   height: auto;
@@ -173,6 +175,7 @@ input[type="text"] {
 /* geolocation */
 .geo {
   grid-area: geo;
+  display: flex;
   justify-self: center;
   background-color: rgb(1, 1, 1, 0.7);
   color: rgb(242, 247, 221);
@@ -183,17 +186,109 @@ input[type="text"] {
   padding: 10px;
   margin: 10px;
 }
+.geo p {
+  padding: 0%;
+  color: rgb(242, 247, 221);
+}
+.geo span {
+  color: rgb(25, 194, 157);
+}
+
+/* Parrot Party! */
+.stress {
+  grid-area: 8/2/9/3;
+  background-color: rgb(1, 1, 1, 0.7);
+  border-radius: 10px;
+  font-family: "Rock Salt", cursive;
+  font-size: 12px;
+}
+.parrot {
+  margin: 2%;
+  text-align: center;
+  background-color: rgb(230, 152, 121);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.party {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* all them dancin' parrots! */
+#gif {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parrot-1 {
+  background-image: url(../img/gif/christmasparrot.gif);
+}
+.parrot-2 {
+  background-image: url(../img/gif/coffeeparrot.gif);
+}
+.parrot-3 {
+  background-image: url(../img/gif/dealwithitparrot.gif);
+}
+.parrot-4 {
+  background-image: url(../img/gif/donutparrot.gif);
+}
+.parrot-5 {
+  background-image: url(../img/gif/gentlemanparrot.gif);
+}
+.parrot-6 {
+  background-image: url(../img/gif/githubparrot.gif);
+}
+.parrot-7 {
+  background-image: url(../img/gif/harrypotterparrot.gif);
+}
+.parrot-8 {
+  background-image: url(../img/gif/headsetparrot.gif);
+}
+.parrot-9 {
+  background-image: url(../img/gif/icecreamparrot.gif);
+}
+.parrot-10 {
+  background-image: url(../img/gif/inverseparrot.gif);
+}
+.parrot-11 {
+  background-image: url(../img/gif/jediparrot.gif);
+}
+.parrot-12 {
+  background-image: url(../img/gif/laptop_parrot.gif);
+}
+.parrot-13 {
+  background-image: url(../img/gif/michaeljacksonparrot.gif);
+}
+.parrot-14 {
+  background-image: url(../img/gif/mustacheparrot.gif);
+}
+.parrot-15 {
+  background-image: url(../img/gif/parrotnotfound.gif);
+}
+.parrot-16 {
+  background-image: url(../img/gif/picassoparrot.gif);
+}
+.parrot-17 {
+  background-image: url(../img/gif/sherlockholmesparrot.gif);
+}
+.parrot-18 {
+  background-image: url(../img/gif/sleepingparrot.gif);
+}
+.parrot-19 {
+  background-image: url(../img/gif/stableparrot.gif);
+}
+.parrot-20 {
+  background-image: url(../img/gif/thumbsupparrot.gif);
+}
 
 /* Dates */
 .date-grid {
   margin-top: 0.5em;
 }
-
 /* Positioning the first day */
 .date-grid button:first-child {
   grid-column: 6;
 }
-
 /* Style for each day */
 .date-grid button {
   position: relative;
@@ -205,25 +300,24 @@ input[type="text"] {
   color: rgb(25, 194, 157);
   font-family: "Special Elite", cursive;
 }
-
 .date-grid button:hover,
 .date-grid button:focus {
   outline: none;
   background-color: rgb(230, 152, 121);
   color: #373d44;
 }
-
 .date-grid button:active,
 .date-grid button.is-selected {
   background-color: #373d44;
   color: rgb(25, 194, 157);
 }
 
-/*Clock code from https://codepen.io/Trikaal/pen/eYOegxm. Is this ok to do, use something from codepen? 
+/*Clock code from https://codepen.io/Trikaal/pen/eYOegxm. 
 I changed the fonts, colors, backgrounds, and some of the layout to make it work with my grid.*/
 .clock {
   grid-area: clock;
 }
+
 section.jsDigitalClock {
   padding: 10px 0;
   width: 75vw;
@@ -245,7 +339,6 @@ section.jsDigitalClock #dClock {
   border-radius: 10px;
   padding: 5px;
 }
-
 section.jsDigitalClock #dClockTime {
   background-color: #373d44;
   border-top-left-radius: 10px;
@@ -268,7 +361,6 @@ section.jsDigitalClock #dClockTime {
   justify-content: center;
   text-align: center;
 }
-
 section.jsDigitalClock #dClockTime span.dText {
   color: rgb(242, 247, 221);
   text-transform: uppercase;
@@ -277,11 +369,9 @@ section.jsDigitalClock #dClockTime span.dText {
   font-size: 10px;
   letter-spacing: 1px;
 }
-
 section.jsDigitalClock #dClockTime .meridiem {
   text-transform: lowercase;
 }
-
 section.jsDigitalClock #dClockTime span.dTime {
   font-family: "Rock Salt", cursive;
   font-weight: 700;
@@ -293,16 +383,15 @@ section.jsDigitalClock #dClockTime span.dTime {
   width: 65px;
   line-height: 1;
 }
-
 section.jsDigitalClock #dClockTime span.colon {
   margin: 15px 5px 0;
   font-family: "Homemade Apple", cursive;
   font-weight: 700;
+
   font-size: 52px;
   line-height: 1;
   color: rgb(242, 247, 221);
 }
-
 section.jsDigitalClock #dClockTime:after {
   clear: both;
   display: block;
@@ -317,7 +406,6 @@ section.jsDigitalClock #dClockDate {
   text-align: center;
   background-color: rgb(1, 1, 1, 0.5);
 }
-
 section.jsDigitalClock #dClockDate span {
   font-family: "Special Elite", cursive;
   font-weight: 300;
