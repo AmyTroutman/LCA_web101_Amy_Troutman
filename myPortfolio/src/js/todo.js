@@ -46,7 +46,7 @@ function digitalClock() {
     case 9:
       month = "October";
       break;
-    case 11:
+    case 10:
       month = "November";
       break;
     case 11:
