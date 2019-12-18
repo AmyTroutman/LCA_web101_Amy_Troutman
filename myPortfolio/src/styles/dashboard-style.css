@@ -197,7 +197,7 @@ input[type="text"] {
 /* Parrot Party! */
 .stress {
   grid-area: 8/2/9/3;
-  background-color: rgb(1, 1, 1, 0.7);
+  background-color: rgba(1, 1, 1, 0.7);
   border-radius: 10px;
   font-family: "Rock Salt", cursive;
   font-size: 12px;
