@@ -1,213 +1,207 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
     ". logo ."
     ". nav ."
     "splash splash splash"
     ". pics ."
     "footer footer footer";
-    font-family: 'Ubuntu', sans-serif;
-    background-color: white;
-    
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
 }
 
 /*head bit*/
 .logo {
-    
-    grid-area: logo;
-    justify-self: center;
-    font-family: 'Pacifico', cursive;
+  grid-area: logo;
+  justify-self: center;
+  font-family: "Pacifico", cursive;
 }
 .logo h1 {
-    font-size: 80px;
-    margin-top: -20%;
+  font-size: 80px;
+  margin-top: -20%;
 }
 .must {
-    transform: rotate(90deg);
-    font-weight: bold;
-    font-size: 100px;
-    text-align:center;
-    font-family: 'Limelight', cursive;
+  transform: rotate(90deg);
+  font-weight: bold;
+  font-size: 100px;
+  text-align: center;
+  font-family: "Limelight", cursive;
 }
 
 nav {
   grid-area: nav;
-  display:flex;
-  justify-content: center; 
-  
+  display: flex;
+  justify-content: center;
 }
 nav a {
-    padding: 3%;
-    text-transform: capitalize;
-    font-weight: 500;
+  padding: 3%;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 .selected {
-    color: #45d3bb;
+  color: #45d3bb;
 }
 /*main bit*/
 .splash {
-    grid-area: splash;
-    display: flex;
-    justify-content: flex-end;
-    background-image: url("../img/splashBack.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 2% 0;
-    
+  grid-area: splash;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../img/splashBack.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 2% 0;
 }
-.words { 
-    padding: 2%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+.words {
+  padding: 2%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .words span {
-    background-color: #1d1e1f;
-    color: white;
-    padding: 2%;
-    margin: 2%;
-    
+  background-color: #1d1e1f;
+  color: white;
+  padding: 2%;
+  margin: 2%;
 }
 .beacon {
-    background-color: white;
-    
-    padding: 2%;
-    text-align: center;
-    font-family: 'Limelight', cursive;
-    text-transform: uppercase;
-    font-size: 20px;
+  background-color: white;
+
+  padding: 2%;
+  text-align: center;
+  font-family: "Limelight", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 .read {
-    margin-top: 5%;
-    padding: 10px;
-    width: 50%;
-    background-color: #45d3bb;
-    color: white;
-    border: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-align: center;
+  margin-top: 5%;
+  padding: 10px;
+  width: 50%;
+  background-color: #45d3bb;
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
 }
 
 /*baby gallery*/
 .pics {
-    grid-area: pics;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 2% 5%;
-    padding: .5% 5% .5% 2%;
+  grid-area: pics;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2% 5%;
+  padding: 0.5% 5% 0.5% 2%;
 }
 .pics img {
-    width: 257px;
-    height: 257px;
-    border: 2px black solid;
-    transition: 0.5s ease-in-out;
-    opacity: .8;
+  width: 257px;
+  height: 257px;
+  border: 2px black solid;
+  transition: 0.5s ease-in-out;
+  opacity: 0.8;
 }
 .pics img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 a {
-    text-decoration: none;
-    color: black;
-    padding: 2%;
+  text-decoration: none;
+  color: black;
+  padding: 2%;
 }
 .minigal {
-    font-family: 'Limelight', cursive;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 5%;
+  font-family: "Limelight", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5%;
 }
 
 /*foot bit*/
 footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    margin: 2% 0;
-    padding: 2%;
-    background-color: #1d1e1f;
-    color: white;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  margin: 2% 0;
+  padding: 2%;
+  background-color: #1d1e1f;
+  color: white;
 }
 footer p {
-    align-self: center;
-    margin: 3%;
+  align-self: center;
+  margin: 3%;
 }
 .social a {
-    border: 2px solid #1d1e1f;
-    padding: 3px;
-    margin: 3px;
+  border: 2px solid #1d1e1f;
+  padding: 3px;
+  margin: 3px;
 }
 .fab {
-    color: white;
-    border: 2px solid white;
-    padding: 5px;
-    font-size: 2em;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  font-size: 2em;
 }
 .fa-facebook-f {
-    padding-right: 9px;
-    padding-left: 9px;
+  padding-right: 9px;
+  padding-left: 9px;
 }
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
-    body {
-        grid-template-areas: 
-    ". logo ."
-    ". nav ."
-    ". splash ."
-    ". pics ."
-    ". footer .";
-    }
-    .pics {
-        flex-direction: row;
-    }
-    .pics img {
-        width: 307px;
-        height: 307px;
-    }
-    footer {
-        margin: 2% 0;
+  body {
+    grid-template-areas:
+      ". logo ."
+      ". nav ."
+      ". splash ."
+      ". pics ."
+      ". footer .";
+  }
+  .pics {
+    flex-direction: row;
+  }
+  .pics img {
+    width: 307px;
+    height: 307px;
+  }
+  footer {
+    margin: 2% 0;
     padding: 2%;
-    }
-    footer p {
-        margin: 0;
-    }
-    .read {
-        width: 20%;
-        padding: 15px;
-        margin-top: 2%;
-    }
+  }
+  footer p {
+    margin: 0;
+  }
+  .read {
+    width: 20%;
+    padding: 15px;
+    margin-top: 2%;
+  }
 }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
-    body {
-        grid-template-areas: 
-    ". logo ."
-    "nav nav nav"
-    "splash splash splash"
-    "pics pics pics"
-    "footer footer footer";
-    }
-    .beacon {
-        font-size: 26px;
-        width: 80%;
-    }
-    .words span {
-        width: 70%;
-        font-size: 24px;
-    }
-    
+  body {
+    grid-template-areas:
+      ". logo ."
+      "nav nav nav"
+      "splash splash splash"
+      "pics pics pics"
+      "footer footer footer";
+  }
+  .beacon {
+    font-size: 26px;
+    width: 80%;
+  }
+  .words span {
+    width: 70%;
+    font-size: 24px;
+  }
 }
