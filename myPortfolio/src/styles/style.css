@@ -34,6 +34,10 @@ nav {
   border: 2px solid rgb(242, 247, 221);
 }
 
+.test {
+  animation: flipInX 3s, flipOutX 3s 2s;
+}
+
 .logo {
   width: auto;
   height: 100%;
