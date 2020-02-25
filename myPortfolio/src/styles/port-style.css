@@ -1,0 +1,42 @@
+body {
+  background-image: url("../img/RockyMountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin-bottom: 3%;
+}
+
+.has-border {
+  margin: 2%;
+  height: 8%;
+  width: 100%;
+  padding: 0;
+  color: rgb(25, 194, 157);
+  font-family: "Rock Salt", cursive;
+  font-size: 0.75em;
+  border-radius: 25px;
+  background: rgb(1, 1, 1, 0.4);
+  text-align: center;
+  border: 2px solid rgb(242, 247, 221);
+}
+
+.gallery {
+  font-family: "Satisfy", cursive;
+  background-color: rgb(230, 152, 121, 0.5);
+  color: rgb(25, 194, 157);
+}
+
+.gallery a {
+  color: rgb(25, 194, 157);
+}
