@@ -4,6 +4,7 @@ body {
   background-size: cover;
 }
 
+/*The global header setttings*/
 header {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -14,7 +15,6 @@ nav {
   display: flex;
   justify-content: center;
   width: 30%;
-  margin-bottom: 3%;
 }
 
 .has-border {
@@ -31,12 +31,50 @@ nav {
   border: 2px solid rgb(242, 247, 221);
 }
 
+/*The project gallery*/
 .gallery {
+  display: grid;
+  grid-template-areas:
+    "bacon dash must"
+    "hanoi roll nasa";
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5% 5%;
+  width: 90%;
+  height: 100%;
   font-family: "Satisfy", cursive;
-  background-color: rgb(230, 152, 121, 0.5);
-  color: rgb(25, 194, 157);
+  background-color: rgb(25, 194, 157, 0.5);
+  border: 2px solid rgb(230, 152, 121);
 }
 
-.gallery a {
-  color: rgb(25, 194, 157);
+.galWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.galLink {
+  color: rgb(242, 247, 221);
+}
+
+.gallery img {
+  width: 70%;
+  margin: 4%;
+}
+
+.bacon {
+  grid-area: bacon;
+}
+.dash {
+  grid-area: dash;
+}
+.mustacchio {
+  grid-area: must;
+}
+.hanoi {
+  grid-area: hanoi;
+}
+.roll {
+  grid-area: roll;
+}
+.nasa {
+  grid-area: nasa;
 }
