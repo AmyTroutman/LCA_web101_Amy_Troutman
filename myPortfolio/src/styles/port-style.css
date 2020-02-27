@@ -1,7 +1,7 @@
 body {
   background-image: url("../img/RockyMountains.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 /*The global header setttings*/
@@ -31,33 +31,67 @@ nav {
   border: 2px solid rgb(242, 247, 221);
 }
 
+/*banner*/
+.banner {
+  position: relative;
+  background-image: linear-gradient(
+    45deg,
+    rgb(25, 194, 157, 0.8),
+    rgb(230, 152, 121, 0.8)
+  );
+  border: 2px solid rgb(242, 247, 221);
+  transform: skewY(-11deg);
+}
+
+.banner:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+  transform: skewY(-11deg);
+}
+
+h1 {
+  color: rgb(242, 247, 221);
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
+  margin-left: 1%;
+  text-align: center;
+}
+
 /*The project gallery*/
 .gallery {
+  position: relative;
   display: grid;
   grid-template-areas:
     "bacon dash must"
     "hanoi roll nasa";
   grid-template-columns: repeat(3, 1fr);
-  margin: 5% 5%;
-  width: 90%;
+  margin: 3% 2%;
+  width: 95%;
   height: 100%;
-  font-family: "Satisfy", cursive;
-  background-color: rgb(25, 194, 157, 0.5);
-  border: 2px solid rgb(230, 152, 121);
+  background-image: linear-gradient(
+    45deg,
+    rgb(25, 194, 157, 0.7),
+    rgb(230, 152, 121, 0.7)
+  );
+  border: 2px solid rgb(242, 247, 221);
+  transform: skewY(-11deg);
 }
 
 .galWrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.galLink {
-  color: rgb(242, 247, 221);
+  position: relative;
+  max-width: 50em;
+  margin: 7% 1%;
+  transform: skewY(11deg);
+  padding: 2%;
 }
 
 .gallery img {
-  width: 70%;
-  margin: 4%;
+  width: 90%;
+  margin: 1%;
 }
 
 .bacon {
