@@ -1,7 +1,9 @@
 body {
   background-image: url("../img/RockyMountains.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 /*The global header setttings*/
@@ -30,7 +32,12 @@ nav {
   text-align: center;
   border: 2px solid rgb(242, 247, 221);
 }
-
+/*main*/
+main {
+  margin: 5%;
+  margin-top: 0;
+  padding: 2%;
+}
 /*banner*/
 .banner {
   position: relative;
@@ -57,7 +64,6 @@ h1 {
   color: rgb(242, 247, 221);
   font-family: "Satisfy", cursive;
   font-size: 2em;
-  margin-left: 1%;
   text-align: center;
 }
 
@@ -90,8 +96,10 @@ h1 {
 }
 
 .gallery img {
-  width: 90%;
-  margin: 1%;
+  width: 80%;
+  margin: 2%;
+  padding: 2%;
+  border: 1px solid rgb(242, 247, 221);
 }
 
 .bacon {
@@ -111,4 +119,39 @@ h1 {
 }
 .nasa {
   grid-area: nasa;
+}
+
+/*Footer stuff*/
+footer {
+  margin: 2%;
+  padding: 1%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(25, 194, 157, 0.7),
+    rgb(230, 152, 121, 0.7)
+  );
+  border: 2px solid rgb(242, 247, 221);
+}
+
+h2 {
+  font-style: italic;
+  color: rgb(242, 247, 221);
+  font-family: "Rock Salt", cursive;
+  text-align: center;
+}
+
+#social {
+  width: 60%;
+  background-color: rgb(230, 152, 121, 0.5);
+  color: rgb(242, 247, 221);
+  border: 2px solid rgb(25, 194, 157);
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  font-size: 1em;
+}
+
+#social a {
+  padding: 2%;
+  color: rgb(242, 247, 221);
 }
