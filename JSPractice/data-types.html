@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Types Practice</title>
+  </head>
+  <body>
+    <script>
+      /*
+      _This is a comment. Follow the other lines that look like me to complete the assignment.
+      Start your LiveServer to see your changes as you save them.
+      _"document" is the interface we have on the screen, also known as the DOM.
+      _.write is a built in method(or function) we can use to print things out on the document/screen. /*
+
+      /*  Add
+      _1. Declare, name and assign two Number type variables values on line 1 and 20
+      _2. Pass the names into the method below like so: document.write(myNum + myNumTwo)on line 22.
+      Be sure to add in the " + " in-between the two variables.
+      _3. Save and checkout your browser.
+      */
+      document.write("<h1>Adding with JavaScript</h1>")
+      var myNewNum = 20
+      var myOtherNum = 56
+      document.write(myNewNum + myOtherNum)
+      document.write("<hr/>") // Don't worry about this line.
+
+      /*  Subtract
+      _1. Now pass those same variables into the ".write()" method on line 30 but with a " - " in-between them.
+      _2. Save and checkout your browser.
+      */
+      document.write("<h1>Subtraction with JavaScript</h1>")
+      document.write(myNewNum - myOtherNum)
+      document.write("<hr/>") // Don't worry about this line.
+
+      /*  Multiply
+      _1. Create another Number type variable with a different value on line 40
+      _2. Do you see the function multiplyTwoNumbers on line 42? It takes in two factors a & b and returns their product.
+      _3. Do you see the document.write(()) on line 46? Un-comment it by removing the // before it.
+      _4. In that same line, pass your new variable's name and one of your first variable's names in the middle of the (()).
+      _5. Save and checkout your browser.
+      */
+      document.write("<h1>Multiplication with JavaScript</h1>")
+      var myDifNum = 99
+
+      function multiplyTwoNumbers(a, b) {
+        return a * b
+      }
+
+      document.write("<h2>Different methods returning the same result: </h2>")
+      document.write("<p>(myDifNum * myOtherNum): </p>")
+      document.write(myDifNum * myOtherNum)
+      document.write("<br/>")
+      document.write("<p>(multiplyTwoNumbers(myDifNum, myOtherNum)): </p>")
+      document.write(multiplyTwoNumbers(myDifNum, myOtherNum))
+      document.write("<hr/>") // Don't worry about this line.
+
+      /*  Divide
+      _1. Below you will see another document.write() on line 57?
+      _2. Type in multipleTwoNumbers(a, b) but replace "a" and "b" with your first two variables you created on lines 19 & 20
+      _3. Then type in " / ".
+      _4. Then type in the name of your last made variable on line 40.
+      _5. Save and checkout your browser.
+      */
+      document.write("<h1>Division with JavaScript</h1>")
+      document.write(
+        "<h2>The / can be inside the multiplyTwoNumbers (parameters), or outside it.</h2>"
+      )
+      document.write(
+        "<p>(multiplyTwoNumbers(myNewNum, myOtherNum) / myDifNum): </p>"
+      )
+      document.write(multiplyTwoNumbers(myNewNum, myOtherNum) / myDifNum)
+      document.write("<br/>")
+      document.write(
+        "<p>(multiplyTwoNumbers(myNewNum, myOtherNum / myDifNum)): </p>"
+      )
+      document.write(multiplyTwoNumbers(myNewNum, myOtherNum / myDifNum))
+      document.write("<hr/>") // Don't worry about this line.
+
+      /*Compare
+      _1. Use the Comparison Operators: <, >, ==, === !=, !===
+      _2. Create a few more variables of either Number or String type
+      _3 Make a few comparisons inside the () of document.write on line 68.
+      _4. Save and checkout your browser. Play some more!!
+      */
+      document.write("<h1>Comparing Variables</h1>")
+      var firstValue = "R"
+      var secondValue = "r"
+      var thirdValue = "arr"
+      var fourthValue = "4"
+      var fifthValue = 4
+      var sixthValue = "four"
+
+      function equivalentSounds(a, b) {
+        return (a = b)
+      }
+
+      document.write(firstValue == secondValue)
+      document.write("<br/>")
+      document.write(equivalentSounds(firstValue, thirdValue) == thirdValue)
+      document.write("<br/>")
+      document.write(
+        firstValue + "=" + equivalentSounds(firstValue, thirdValue)
+      )
+      document.write("<hr/>") // Don't worry about this line.
+
+      /*Concat Strings "Hello" + "Snoopy" => "Hello Snoopy"
+      _1. Create a few new String type variables below
+      _2. Type the names in to the () of the document.write method below on line 80 separating each name with a " + ".
+      */
+      document.write("<h1>Concatanation!!</h1>")
+      var greet = "Hola"
+      var namePhrase = "Mi nombre es "
+      var name = "Amy"
+      var exclaim = "! "
+      var endSent = ". "
+      document.write(greet + exclaim + namePhrase + name + endSent)
+      document.write("<hr/>")
+    </script>
+
+    <p>
+      When you're finshed see if you can bring in some of these other
+      <a href="https://www.w3schools.com/jsref/met_doc_write.asp"
+        >built in methods</a
+      >
+    </p>
+  </body>
+</html>
