@@ -10,14 +10,12 @@ function changeMarkerToO() {
 }
 
 //THIS WORKS!!!
-var reply_click = function(obj) {
+var placeMarker = function(obj) {
   console.log(obj.id)
   var clickId = obj.id
-  if (clickId != "") {
+  if (document.getElementById(clickId).innerHTML === "") {
     document.getElementById(clickId).innerHTML = gameMarker
+  } else {
+    alert("That spot is taken!")
   }
-  return clickId
 }
-
-///ok, so the asignment requires a function called placeMarker(). So I need to get the document.write bit
-///to work outside of reply_click.
