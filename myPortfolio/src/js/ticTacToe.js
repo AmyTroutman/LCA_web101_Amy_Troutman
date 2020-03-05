@@ -1,4 +1,4 @@
-var gameMarker = "x"
+var gameMarker = "X"
 
 function changeMarkerToX() {
   gameMarker = "X"
