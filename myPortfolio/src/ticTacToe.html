@@ -11,41 +11,28 @@
   </head>
   <body>
     <div class="errything">
-      <header>
-        <h1>Tic</h1>
-        <h1>Tac</h1>
-        <h1>Toe</h1>
+      <header class="wrapper">
+        <h1 id="tic">Tic</h1>
+        <h1 id="tac">Tac</h1>
+        <h1 id="toe">Toe</h1>
       </header>
       <div class="board">
         <!--is there such a thing as too many onclick calls?? Do these need onclick?? 
         It works, but it seems clunky.-->
-        <p class="ttt" id="topL" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="topM" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="topR" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="midL" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="midM" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="midR" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="botL" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="botM" onclick="getName(), placeMarker()"></p>
-        <p class="ttt" id="botR" onclick="getName(), placeMarker()"></p>
+        <p class="ttt" id="topL" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="topM" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="topR" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="midL" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="midM" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="midR" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="botL" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="botM" onClick="placeMarker(this)"></p>
+        <p class="ttt" id="botR" onClick="placeMarker(this)"></p>
       </div>
       <aside>
         <button id="x" onclick="changeMarkerToX()">X</button>
         <button id="o" onclick="changeMarkerToO()">O</button>
       </aside>
     </div>
-
-    <marquee
-      >I want to 3d print some js code so I can punch it in the face.</marquee
-    >
-    <marquee
-      >I want to 3d print some js code so I can punch it in the face.</marquee
-    >
-    <marquee
-      >I want to 3d print some js code so I can punch it in the face.</marquee
-    >
-    <marquee
-      >I want to 3d print some js code so I can punch it in the face.</marquee
-    >
   </body>
 </html>

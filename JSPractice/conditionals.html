@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practice Conditionals and Loops</title>
+  </head>
+  <body>
+    <h1>Project 1: Print Out Each Word</h1>
+    <p>
+      Given an array of words, loop through the array and print out each word.
+    </p>
+    <script>
+      const wordArr = [
+        "waffle",
+        "whimper",
+        "sneeze",
+        "shindig",
+        "leopard",
+        "whisper",
+        "elegant"
+      ]
+      const wordArray2 = ["lappy", "happy", "sappy", "chappy", "crappy"]
+
+      const printOutWord = arr => {
+        // your code here
+        document.write("<h3>Word List:</h3>")
+        for (i = 0; i < arr.length; i++)
+          document.write(i + 1 + ": " + arr[i] + "<br>")
+      }
+
+      //call the function
+      printOutWord(wordArr)
+      document.write("<br/>")
+      printOutWord(wordArray2)
+    </script>
+
+    <!-- divider for next section  -->
+    <hr />
+
+    <h1>Add Numbers</h1>
+    <p>Given two numbers, return the sum of the two numbers.</p>
+    <script>
+      const addNums = (a, b) => {
+        sumNum = a + b
+        document.write(a + "+" + b + "=" + sumNum)
+      }
+
+      var numOne = 4
+      var numTwo = 6
+      addNums(numOne, numTwo) // => 11
+    </script>
+
+    <!-- divider for next section  -->
+    <hr />
+
+    <h1>Remove Zeros</h1>
+    <p>
+      Given an array of numbers, create and return a new array with all '0's
+      removed.
+    </p>
+    <script>
+      var exampleArr = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0]
+
+      function zero(value, index, array) {
+        if (value !== 0) {
+          return value
+        }
+      }
+      var noZero = exampleArr.filter(zero)
+      //call the function
+      document.write(noZero)
+    </script>
+
+    <!-- divider for next section  -->
+    <hr />
+
+    <h1>Sum of Array Squared</h1>
+    <p>
+      Given the array of numbers: [2, 3, 5, 6, 8] square each number, save them
+      to a new array and return the sum of the new array.
+    </p>
+
+    <script>
+      const myArr = [2, 3, 5, 6, 8]
+
+      const sumSquared = arr => {
+        var squareArr = []
+        // var sum = 0
+        for (i = 0; i < myArr.length; i++) {
+          var square = myArr[i] * myArr[i]
+          squareArr.splice(0, 0, square)
+        }
+        function sumArr(total, value, index, array) {
+          return total + value
+        }
+        // var sum = squareArr.reduce(sumArr)
+        document.write(squareArr.reduce(sumArr))
+      }
+      sumSquared(myArr) // => 138
+    </script>
+  </body>
+</html>

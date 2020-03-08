@@ -1,0 +1,238 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.25fr 1fr;
+  grid-template-areas:
+    ". . ."
+    ". flex-cal ."
+    ". . .";
+  background-image: url(../images/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flex-cal {
+  grid-area: flex-cal;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.total {
+  background-color: lightgrey;
+  grid-area: total;
+  border-style: solid;
+  border-width: 2px 1px 1px 2px;
+  border-color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  width: 60%;
+}
+/*a change*/
+.clear {
+  grid-area: clear;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: black;
+  color: white;
+  width: 20%;
+}
+
+.btn7 {
+  grid-area: btn7;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn8 {
+  grid-area: btn8;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn9 {
+  grid-area: btn9;
+  border-style: solid;
+  border-width: 1px;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn-div {
+  grid-area: btn-div;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+  background-color: rgb(112, 25, 25);
+  color: white;
+  width: 20%;
+}
+
+.btn4 {
+  grid-area: btn4;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn5 {
+  grid-area: btn5;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn6 {
+  grid-area: btn6;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn-mult {
+  grid-area: btn-mult;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(112, 25, 25);
+  color: white;
+  width: 20%;
+}
+
+.btn1 {
+  grid-area: btn1;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn2 {
+  grid-area: btn2;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn3 {
+  grid-area: btn3;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn-plus {
+  grid-area: btn-plus;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+  background-color: rgb(112, 25, 25);
+  color: white;
+  width: 20%;
+}
+
+.btn-per {
+  grid-area: btn-per;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+  background-color: rgb(112, 25, 25);
+  color: white;
+  width: 20%;
+}
+
+.btn0 {
+  grid-area: btn0;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.btn-equ {
+  grid-area: btn-equ;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+  background-color: rgb(112, 25, 25);
+  color: white;
+  width: 20%;
+}
+
+.btn-sub {
+  grid-area: btn-sub;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgb(112, 25, 25);
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
