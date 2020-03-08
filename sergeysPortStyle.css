@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "header header"
+    "main main";
+}
+
+header {
+  grid-area: header;
+  background-image: url(/MyPortFolio/Images/Portfolio\Header\BG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 100px;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+  background-image: url(./myPortfolio/src/img/CaprockCanyon.jpg);
+  background-size: auto;
+  /* height: 100%; */
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(85, 26, 139);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 30%;
+}
+
+.has-border {
+  border: 5px double;
+  margin: 1%;
+}

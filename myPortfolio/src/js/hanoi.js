@@ -1,15 +1,15 @@
 $(document).ready(function() {
-  let $block = null;
+  let $block = null
 
   $("[data-column]").click(function() {
     if ($block) {
-      $(this).append($block);
-      $block = null;
+      $(this).append($block)
+      $block = null
     } else {
       $block = $(this)
         .children()
         .last()
-        .detach();
+        .detach()
     }
-  });
-});
+  })
+})
