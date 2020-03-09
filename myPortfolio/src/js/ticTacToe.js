@@ -19,3 +19,8 @@ var placeMarker = function(obj) {
     alert("That spot is taken!")
   }
 }
+
+function resetBoard() {
+  document.getElementByClassName("ttt").innerHTML = ""
+  console.log("reset")
+}
