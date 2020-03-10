@@ -10,7 +10,7 @@ function changeMarkerToO() {
 }
 
 //THIS WORKS!!!
-var placeMarker = function(obj) {
+var placeMarker = function (obj) {
   console.log(obj.id)
   var clickId = obj.id
   if (document.getElementById(clickId).innerHTML === "") {
@@ -21,6 +21,21 @@ var placeMarker = function(obj) {
 }
 
 function resetBoard() {
-  document.getElementByClassName("ttt").innerHTML = ""
+  document.getElementById("topL").innerHTML = " ."
+  document.getElementById("topM").innerHTML = " ."
+  document.getElementById("topR").innerHTML = " ."
+  document.getElementById("midL").innerHTML = " ."
+  document.getElementById("midM").innerHTML = " ."
+  document.getElementById("midR").innerHTML = " ."
+
+  document(topM.innerHTML = " .")
+  document(topR.innerHTML = " .")
+  document(midL.innerHTML = " .")
+  document(midM.innerHTML = " .")
+  document(midR.innerHTML = " .")
+  document(botL.innerHTML = " .")
+  document(botM.innerHTML = " .")
+  document(botR.innerHTML = " .")
+
   console.log("reset")
 }

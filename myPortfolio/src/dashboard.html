@@ -1,249 +1,243 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/dashboard-style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Bad+Script|Homemade+Apple|Special+Elite&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Dashboard</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/dashboard-style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Homemade+Apple|Special+Elite&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet" />
 
-  <body>
-    <!--This is the clock. I grabbed this from a codepen. Adjusted to fit my page and design-->
-    <div class="clock">
-      <section class="jsDigitalClock">
-        <div class="container">
-          <div class="row rowHead">
-            <div class="col-md-12"></div>
-          </div>
-          <div class="row rowBody">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <div id="dClock">
-                <div id="dClockInner">
-                  <div id="dClockTime">
-                    <div class="digitHour">
-                      <span class="dText">Hour</span>
-                      <span id="dHour" class="dTime"></span>
-                    </div>
-                    <span class="colon">:</span>
-                    <div class="digitMinute">
-                      <span class="dText">Minute</span>
-                      <span id="dMinute" class="dTime"></span>
-                    </div>
-                    <span class="colon">:</span>
-                    <div class="digitSecond">
-                      <span class="dText">Second</span>
-                      <span id="dSecond" class="dTime"></span>
-                    </div>
-                    <span class="colon"></span>
-                    <div class="meridiem">
-                      <span class="dText">Meridiem</span>
-                      <span id="ampm" class="dTime"></span>
-                    </div>
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!--This is the clock. I grabbed this from a codepen. Adjusted to fit my page and design-->
+  <div class="clock">
+    <section class="jsDigitalClock">
+      <div class="container">
+        <div class="row rowHead">
+          <div class="col-md-12"></div>
+        </div>
+        <div class="row rowBody">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div id="dClock">
+              <div id="dClockInner">
+                <div id="dClockTime">
+                  <div class="digitHour">
+                    <span class="dText">Hour</span>
+                    <span id="dHour" class="dTime"></span>
                   </div>
-                  <div id="dClockDate">
-                    <span id="dMonth"></span>
-                    <span id="dDate"></span>
-                    <span id="dYear"></span>
-                    <span id="dDay"></span>
+                  <span class="colon">:</span>
+                  <div class="digitMinute">
+                    <span class="dText">Minute</span>
+                    <span id="dMinute" class="dTime"></span>
                   </div>
+                  <span class="colon">:</span>
+                  <div class="digitSecond">
+                    <span class="dText">Second</span>
+                    <span id="dSecond" class="dTime"></span>
+                  </div>
+                  <span class="colon"></span>
+                  <div class="meridiem">
+                    <span class="dText">Meridiem</span>
+                    <span id="ampm" class="dTime"></span>
+                  </div>
+                </div>
+                <div id="dClockDate">
+                  <span id="dMonth"></span>
+                  <span id="dDate"></span>
+                  <span id="dYear"></span>
+                  <span id="dDay"></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </div>
+  <!--Obv the little banner up top. The simplest thing around these parts.-->
+  <div class="hello">
+    <h2>Motivational Noises</h2>
+  </div>
+  <!--The todo list.-->
+  <div class="todo">
+    <section>
+      <h2>Get some stuff done!</h2>
+      <ul>
+        <li></li>
+      </ul>
+      <form>
+        <input class="input" type="text" placeholder="Do some more!" />
+        <input class="doIt" type="submit" value="Do It!" />
+      </form>
+    </section>
+  </div>
+  <!--The non-functional calculator.-->
+  <div class="calc">
+    <div class="screen">
+      <p>Calculatron 5000</p>
+      <input type="text" />
     </div>
-    <!--Obv the little banner up top. The simplest thing around these parts.-->
-    <div class="hello">
-      <h2>Motivational Noises</h2>
+    <div class="row">
+      <button class="ac">AC</button>
+      <button class="ec">CE</button>
+      <button class="per">%</button>
+      <button class="div">/</button>
     </div>
-    <!--The todo list.-->
-    <div class="todo">
-      <section>
-        <h2>Get some stuff done!</h2>
-        <ul>
-          <li>Learn Javascript :(</li>
-        </ul>
-        <form>
-          <input class="input" type="text" placeholder="Do some more!" />
-          <input class="doIt" type="submit" value="Do It!" />
-        </form>
-      </section>
+    <div class="row">
+      <button class="sev">7</button>
+      <button class="eig">8</button>
+      <button class="nin">9</button>
+      <button class="mul">x</button>
     </div>
-    <!--The non-functional calculator.-->
-    <div class="calc">
-      <div class="screen">
-        <p>Calculatron 5000</p>
-        <input type="text" />
-      </div>
-      <div class="row">
-        <button class="ac">AC</button>
-        <button class="ec">CE</button>
-        <button class="per">%</button>
-        <button class="div">/</button>
-      </div>
-      <div class="row">
-        <button class="sev">7</button>
-        <button class="eig">8</button>
-        <button class="nin">9</button>
-        <button class="mul">x</button>
-      </div>
-      <div class="row">
-        <button class="fou">4</button>
-        <button class="fiv">5</button>
-        <button class="six">6</button>
-        <button class="min">-</button>
-      </div>
-      <div class="row">
-        <button class="one">1</button>
-        <button class="two">2</button>
-        <button class="thr">3</button>
-        <button class="plu">+</button>
-      </div>
-      <div class="row">
-        <button class="zer">0</button>
-        <button class="dec">.</button>
-        <button class="equ">=</button>
-        <button class="smi">: )</button>
-      </div>
+    <div class="row">
+      <button class="fou">4</button>
+      <button class="fiv">5</button>
+      <button class="six">6</button>
+      <button class="min">-</button>
     </div>
-    <!--The non-functional calendar. I could probably go through the clock js and find the bit that'd help make this work, but meh.-->
-    <div class="cal">
-      <div class="month-indicator">
-        <time datetime="2019-11"> December 2019 </time>
-      </div>
-      <div class="day-of-week">
-        <div>Su</div>
-        <div>Mo</div>
-        <div>Tu</div>
-        <div>We</div>
-        <div>Th</div>
-        <div>Fr</div>
-        <div>Sa</div>
-      </div>
-      <div class="date-grid">
-        <button>
-          <time datetime="2019-11-01">1</time>
-        </button>
-        <button>
-          <time datetime="2019-11-11">2</time>
-        </button>
-        <button>
-          <time datetime="2019-11-03">3</time>
-        </button>
-        <button>
-          <time datetime="2019-11-04">4</time>
-        </button>
-        <button>
-          <time datetime="2019-11-05">5</time>
-        </button>
-        <button>
-          <time datetime="2019-11-06">6</time>
-        </button>
-        <button>
-          <time datetime="2019-11-07">7</time>
-        </button>
-        <button>
-          <time datetime="2019-11-08">8</time>
-        </button>
-        <button>
-          <time datetime="2019-11-09">9</time>
-        </button>
-        <button>
-          <time datetime="2019-11-11">10</time>
-        </button>
-        <button>
-          <time datetime="2019-11-11">11</time>
-        </button>
-        <button>
-          <time datetime="2019-11-12">12</time>
-        </button>
-        <button>
-          <time datetime="2019-11-13">13</time>
-        </button>
-        <button>
-          <time datetime="2019-11-14">14</time>
-        </button>
-        <button>
-          <time datetime="2019-11-15">15</time>
-        </button>
-        <button>
-          <time datetime="2019-11-16">16</time>
-        </button>
-        <button>
-          <time datetime="2019-11-17">17</time>
-        </button>
-        <button>
-          <time datetime="2019-11-18">18</time>
-        </button>
-        <button>
-          <time datetime="2019-11-19">19</time>
-        </button>
-        <button>
-          <time datetime="2019-11-20">20</time>
-        </button>
-        <button>
-          <time datetime="2019-11-21">21</time>
-        </button>
-        <button>
-          <time datetime="2019-11-22">22</time>
-        </button>
-        <button>
-          <time datetime="2019-11-23">23</time>
-        </button>
-        <button>
-          <time datetime="2019-11-24">24</time>
-        </button>
-        <button>
-          <time datetime="2019-11-25">25</time>
-        </button>
-        <button>
-          <time datetime="2019-11-26">26</time>
-        </button>
-        <button>
-          <time datetime="2019-11-27">27</time>
-        </button>
-        <button>
-          <time datetime="2019-11-28">28</time>
-        </button>
-        <button>
-          <time datetime="2019-11-29">29</time>
-        </button>
-        <button>
-          <time datetime="2019-11-30">30</time>
-        </button>
-      </div>
+    <div class="row">
+      <button class="one">1</button>
+      <button class="two">2</button>
+      <button class="thr">3</button>
+      <button class="plu">+</button>
     </div>
-    <!--The geolactor. Thanks, Gray, for finding the super simple way to do this and sharing it with us.-->
-    <div class="geo">
-      <p>Country: <span id="country"></span></p>
-      <p>State: <span id="state"></span></p>
-      <p>City: <span id="city"></span></p>
-      <p>Latitude: <span id="latitude"></span></p>
-      <p>Longitude: <span id="longitude"></span></p>
-      <p>IP: <span id="IPv4"></span></p>
+    <div class="row">
+      <button class="zer">0</button>
+      <button class="dec">.</button>
+      <button class="equ">=</button>
+      <button class="smi">: )</button>
     </div>
-    <!--hahaha, hold onto your butts, here come the parrots!-->
-    <div class="stress">
-      <div class="parrot">Click to get this party started!</div>
-      <div class="party"></div>
+  </div>
+  <!--The non-functional calendar. I could probably go through the clock js and find the bit that'd help make this work, but meh.-->
+  <div class="cal">
+    <div class="month-indicator">
+      <time datetime="2019-11"> December 2019 </time>
     </div>
-  </body>
-  <script src="./js/jquery.min.js"></script>
-  <script src="js/todo.js"></script>
+    <div class="day-of-week">
+      <div>Su</div>
+      <div>Mo</div>
+      <div>Tu</div>
+      <div>We</div>
+      <div>Th</div>
+      <div>Fr</div>
+      <div>Sa</div>
+    </div>
+    <div class="date-grid">
+      <button>
+        <time datetime="2019-11-01">1</time>
+      </button>
+      <button>
+        <time datetime="2019-11-11">2</time>
+      </button>
+      <button>
+        <time datetime="2019-11-03">3</time>
+      </button>
+      <button>
+        <time datetime="2019-11-04">4</time>
+      </button>
+      <button>
+        <time datetime="2019-11-05">5</time>
+      </button>
+      <button>
+        <time datetime="2019-11-06">6</time>
+      </button>
+      <button>
+        <time datetime="2019-11-07">7</time>
+      </button>
+      <button>
+        <time datetime="2019-11-08">8</time>
+      </button>
+      <button>
+        <time datetime="2019-11-09">9</time>
+      </button>
+      <button>
+        <time datetime="2019-11-11">10</time>
+      </button>
+      <button>
+        <time datetime="2019-11-11">11</time>
+      </button>
+      <button>
+        <time datetime="2019-11-12">12</time>
+      </button>
+      <button>
+        <time datetime="2019-11-13">13</time>
+      </button>
+      <button>
+        <time datetime="2019-11-14">14</time>
+      </button>
+      <button>
+        <time datetime="2019-11-15">15</time>
+      </button>
+      <button>
+        <time datetime="2019-11-16">16</time>
+      </button>
+      <button>
+        <time datetime="2019-11-17">17</time>
+      </button>
+      <button>
+        <time datetime="2019-11-18">18</time>
+      </button>
+      <button>
+        <time datetime="2019-11-19">19</time>
+      </button>
+      <button>
+        <time datetime="2019-11-20">20</time>
+      </button>
+      <button>
+        <time datetime="2019-11-21">21</time>
+      </button>
+      <button>
+        <time datetime="2019-11-22">22</time>
+      </button>
+      <button>
+        <time datetime="2019-11-23">23</time>
+      </button>
+      <button>
+        <time datetime="2019-11-24">24</time>
+      </button>
+      <button>
+        <time datetime="2019-11-25">25</time>
+      </button>
+      <button>
+        <time datetime="2019-11-26">26</time>
+      </button>
+      <button>
+        <time datetime="2019-11-27">27</time>
+      </button>
+      <button>
+        <time datetime="2019-11-28">28</time>
+      </button>
+      <button>
+        <time datetime="2019-11-29">29</time>
+      </button>
+      <button>
+        <time datetime="2019-11-30">30</time>
+      </button>
+    </div>
+  </div>
+  <!--The geolactor. Thanks, Gray, for finding the super simple way to do this and sharing it with us.-->
+  <div class="geo">
+    <p>Country: <span id="country"></span></p>
+    <p>State: <span id="state"></span></p>
+    <p>City: <span id="city"></span></p>
+    <p>Latitude: <span id="latitude"></span></p>
+    <p>Longitude: <span id="longitude"></span></p>
+    <p>IP: <span id="IPv4"></span></p>
+  </div>
+  <!--hahaha, hold onto your butts, here come the parrots!-->
+  <div class="stress">
+    <div class="parrot">Click to get this party started!</div>
+    <div class="party"></div>
+  </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="js/todo.js"></script>
+
 </html>

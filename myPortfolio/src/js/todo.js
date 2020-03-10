@@ -105,12 +105,13 @@ setInterval(digitalClock, 1100);
 
 /* JQuery Todo, thanks to http://jsfiddle.net/daviddavidson/3P6KE/ */
 /* forgot this for a good long while, it really helps */
-$(document).ready(function($) {
-  $("form").submit(function() {
+$(document).ready(function ($) {
+  $("form").submit(function () {
     if ($(".input").val() !== "") {
       var newTask = $(".input").val();
       var newLi = $("<li>" + newTask + "</li>");
-      newLi.on("click", function() {
+
+      newLi.on("click", function () {
         $(this).remove();
       });
       $("ul").append(newLi);
@@ -125,7 +126,7 @@ $.ajax({
   url: "https://geolocation-db.com/jsonp",
   jsonpCallback: "callback",
   dataType: "jsonp",
-  success: function(location) {
+  success: function (location) {
     $("#country").html(location.country_name);
     $("#state").html(location.state);
     $("#city").html(location.city);
@@ -138,7 +139,7 @@ $.ajax({
 /* clicky clicky */
 /* So, when parrot is clicked, a new div is appended to party. It's given an ID
 of gif and a random parrot class, using the getRandom function. */
-$(".parrot").click(function() {
+$(".parrot").click(function () {
   $(".party").append(
     '<div id="gif" class="parrot-' + getRandom(1, 20) + '"></div>'
   );
