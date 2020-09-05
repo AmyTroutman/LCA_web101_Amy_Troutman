@@ -2,29 +2,28 @@ body {
   background-image: url(../img/CaprockCanyon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /*height: 100vh;
-    width: 100vw;*/
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 /*top bits*/
 header {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'logo' 'nav';
   width: 100%;
+  margin-bottom: 2%;
 }
 
 nav {
+  grid-area: nav;
   display: flex;
-  justify-content: center;
-  width: 30%;
-  margin-bottom: 3%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;  
 }
 
 .has-border {
-  margin: 2%;
-  height: 8%;
-  width: 100%;
-  padding: 0;
+  padding: 2%;
   color: rgb(25, 194, 157);
   font-family: "Rock Salt", cursive;
   font-size: 0.75em;
@@ -34,90 +33,31 @@ nav {
   border: 2px solid rgb(242, 247, 221);
 }
 
-.test {
-  animation: flipInX 3s, flipOutX 3s 2s;
-}
-
 .logo {
-  width: auto;
-  height: 100%;
-  margin: 1% auto;
-  grid-row: 2;
-  animation-duration: 4s;
+  grid-area: logo;
+  width: 70%;
+  margin: 1%;
 }
 
 /*main bits*/
 
 main {
   height: 100%;
-  width: 100%;
+  width: 70%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: -5%;
+  margin-top: 3%;
 }
 
 #profile-pic {
   width: 300px;
   height: 300px;
   border-radius: 15%;
-  margin: 15% auto;
-  grid-column: 2/3;
+  margin: auto;
   animation-duration: 7s;
-}
-
-#gold-pic {
-  width: 300px;
-  height: 300px;
-  border-radius: 15%;
-  margin: 15% auto;
-  grid-column: 2/3;
-  animation-duration: 8s;
-}
-
-@-webkit-keyframes goldOut {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    width: 0;
-    height: 0;
-  }
-}
-
-@keyframes goldOut {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    width: 0;
-    height: 0;
-  }
-}
-
-.goldOut {
-  -webkit-animation-name: goldOut;
-  animation-name: goldOut;
 }
 
 h1 {
   color: rgb(230, 152, 121);
-  grid-column: 2/3;
   margin: 3% auto;
   text-decoration: underline rgb(25, 194, 157);
   font-family: "Satisfy", cursive;
@@ -125,7 +65,6 @@ h1 {
 }
 
 h2 {
-  grid-column: 2/3;
   margin: 3% auto;
   font-style: italic;
   color: rgb(242, 247, 221);
@@ -133,7 +72,6 @@ h2 {
 }
 
 button {
-  grid-column: 2/3;
   margin: 3% auto;
   width: auto;
   height: 50%;

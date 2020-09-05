@@ -12,7 +12,7 @@ header {
 }
 
 #myFace {
-    width: 260px;
+    width: 230px;
     height: 200px;
     border: rgb(230, 152, 121) solid 2px;
     border-radius: 5%;
@@ -20,6 +20,7 @@ header {
 
 h1 {
     font-family: 'Rock Salt', cursive;
+    font-size: xx-large;
     color: rgb(25, 194, 157);
     text-align: center;
     background-color: #dad8d1;
@@ -47,7 +48,14 @@ h2 {
 
 section {
     font-family: 'Special Elite', cursive;
-    
+}
+
+.job {
+    margin-left: 7%;
+}
+
+.job li {
+    margin-left: 8%;
 }
 
 .date {
@@ -69,9 +77,14 @@ main {
     color: #dad8d1;
 }
 
+.left section {
+    margin: 5%;
+}
+
 .left h2 {
     border-bottom: #dad8d1 solid 3px;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .right {
